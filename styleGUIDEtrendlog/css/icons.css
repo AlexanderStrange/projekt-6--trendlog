@@ -54,7 +54,7 @@ nav{
 /*når skærmen bliver for small*/
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1300px){
 
   .line{
     width: 30px;
@@ -76,12 +76,12 @@ nav{
   z-index: 2;
 }
 
-  .nav-links{
-    position: fixed;
-    background: #333;
-    height: 100%;
-    width: 100%;
-    flex-direction: column;
+.nav-links{
+  position: fixed;
+  background: #333;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
 
     /*mask*/
   clip-path: circle(100px at 90% -10%);
@@ -110,4 +110,39 @@ nav{
   text-transform: uppercase;
   padding: 50px;
   justify-content: center;
+}
+
+/*menu med overlow*/
+
+
+h2{
+  margin-left: 5%;
+}
+
+
+
+#container {
+  overflow-y: scroll;
+  background: white;
+  display: block;
+  width: 40%;
+  height: 30%;
+  margin: 1% 0% 0% 5%;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+  height: 20%;
+  background: grey;
+  padding: 1.5%;
+
+}
+#submitbutton{
+  position: absolute;
+  top: 62%;
+  width: 8%;
+  height: 5%;
+  right: 80;
 }
