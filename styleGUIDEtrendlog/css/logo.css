@@ -38,7 +38,7 @@ nav{
   text-transform: uppercase;
 }
 
-.home{
+.logo{
   text-decoration: none;
   font-size: 1.5em;
   color: #fff;
@@ -48,9 +48,14 @@ nav{
 
 .nav-links a:hover{
   color: white;
+
 }
 
-/*når skærmen bliver smallere media-query*/
+.nav-links a:hover{
+  color: white;
+}
+
+/*når skærmen bliver for small*/
 
 
 @media screen and (max-width: 768px){
@@ -99,80 +104,14 @@ nav{
 
 /*landing page (1)*/
 
+.landing   {
+  height: 90%;
+}
 
-
-h1 {
+.colorhead {
   display: flex;
   font-size: 50px;
   text-transform: uppercase;
-  padding-top: 50px;
-  justify-content: space-around;
-}
-
-h2 {
-  display: flex;
-  font-size: 30px;
-  text-transform: uppercase;
-  padding-top: 20px;
-  justify-content: space-around;
-}
-
-
-@media screen and (max-width: 768px){
-
-h1{
-    font-size: 30px;
-  }
-
-h2 {
-  display: flex;
-  font-size: 20px;
-  text-transform: uppercase;
-  padding-top: 20px;
-  justify-content: space-around;
-  }
-}
-
-
-section {
-  height: 20%;
-}
-
-.contentlanding {
-  padding-left: 35%;
-  padding-right: 35%;
-  padding-top: 2.5%;
-  text-align: center;
-}
-
-.reminder{
-  text-align: center;
-  color: red;
-  font-weight: bold;
-}
-
-
-p {
-  line-height: 2.5em;
-  text-align: justify;
-}
-
-  img{
-    background-color: #9d9d9d;
-    padding: 20px;
-
-  }
-
-@media screen and (max-width: 768px){
-
-p{
-    font-size: 12px;
-  }
-
-  .contentlanding {
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 2.5%;
-  text-align: center;
-}
+  padding: 50px;
+  justify-content: center;
 }
