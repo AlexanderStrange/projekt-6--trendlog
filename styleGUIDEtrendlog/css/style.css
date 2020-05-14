@@ -53,7 +53,7 @@ nav{
 /*når skærmen bliver smallere media-query*/
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1300px){
 
   .line{
     width: 30px;
@@ -118,7 +118,7 @@ h2 {
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1300px){
 
 h1{
     font-size: 30px;
@@ -163,7 +163,7 @@ p {
 
   }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1300px){
 
 p{
     font-size: 12px;

@@ -54,7 +54,7 @@ nav{
 /*når skærmen bliver for small*/
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1300px){
 
 .line{
   width: 30px;
