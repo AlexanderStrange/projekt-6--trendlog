@@ -31,11 +31,18 @@ nav, .SFAP{
 	display: flex;
 }
 ul{
+	align-items: center;
+	display: flex;
 	list-style: none;
 }
 header nav li{
 	float: left;
 }
+
+header ul li:hover{
+	background: #3bc143;
+}
+
 header a{
 	color: inherit;
 	text-decoration: none;
@@ -48,6 +55,10 @@ header li{
 .SFAP{
 	position: absolute;
 	right: 0;
+}
+.underline{
+	text-decoration: underline;
+	text-decoration-color: #3bc143;
 }
 .channel{
 	background: #fff;
