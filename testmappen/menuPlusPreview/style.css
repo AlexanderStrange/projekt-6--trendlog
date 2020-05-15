@@ -62,6 +62,9 @@ h2{
   height: 5%;
 
 }
+
+/*venstre side af skærmen*/
+
 /*preview css*/
 /* The grid: Four equal columns that floats next to each other */
 .column {
@@ -89,7 +92,7 @@ h2{
 }
 
 /* The expanding image container (positioning is needed to position the close button and the text) */
-.container {
+.containerpreview {
   position: relative;
   display: none;
 }
@@ -112,4 +115,3 @@ h2{
   font-size: 35px;
   cursor: pointer;
 }
-/*venstre side af skærmen*/
