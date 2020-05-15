@@ -72,6 +72,29 @@ header li{
 	width: 200px;
 }
 
+/* LEFT & RIGHT*/
+section{
+	display: flex;
+}
+/* left */
+.left{
+	width: 40%;
+}
+/* right */
+.right{
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	width: 60%;
+}
+.preview{
+	background: #fff;
+	height: auto;
+	margin: 50px 0;
+	padding-top: 56.25%;
+	width: 90%;
+}
+
 /* NAVIGATION - 'Back', prikker, 'Next'*/
 .navigation{
 	align-items: center;
@@ -79,7 +102,7 @@ header li{
 	display: flex;
 	height: 5%;
 	position: absolute;
-	right: 3%;
+	right: 5%;
 	width: 50%;
 }
 .backnext{
