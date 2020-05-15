@@ -1,0 +1,58 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+html, body{
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  font-family: arial, helvetica, sans-serif;
+}
+
+
+
+#maincontainer{
+  display: flex;
+  background: blue;
+  width: 100%;
+  height: 100%;
+
+}
+
+#menu{
+  background: yellow;
+  width: 50%;
+
+}
+
+h2{
+  margin: 30% 0 0 5%;
+}
+
+#container {
+  overflow-y: scroll;
+  background: white;
+  display: block;
+  width: 80%;
+  height: 30%;
+  margin: 2% 0% 0% 5%;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2px;
+  height: 12%;
+  background: grey;
+  padding: 1.5%;
+
+}
+#submitbutton{
+  position: absolute;
+  top: 66%;
+  width: 5%;
+  height: 5%;
+
+}
