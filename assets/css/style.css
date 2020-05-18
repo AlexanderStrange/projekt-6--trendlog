@@ -86,23 +86,128 @@ section{
 	align-items: center;
 	display: flex;
 	justify-content: center;
+	padding: 5%;
 }
 /* left */
 .left{
 	width: 40%;
+	display: flex;
+  align-items: flex-end;
+	flex-direction: column;
+}
+h2{
+}
+
+#container {
+  overflow-y: scroll;
+  background: white;
+  display: block;
+  width: 100%;
+  height: 30%;
+	flex: auto;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2px;
+  height: 12%;
+  background: grey;
+  padding: 1.5%;
+
+}
+#submitbutton{
+  position: absolute;
+  top: 66%;
+  width: 5%;
+  height: 5%;
+
+}
+
+/*venstre side af skærmen*/
+
+.click-box{
+  text-decoration: none;
+}
+.box:hover{
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+/*preview css*/
+
+.row{
+  display: flex;
+}
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  width: 2rem;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 /* right */
 .right{
 	width: 60%;
+	display: flex;
+  align-items: flex-end;
+}
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.containerpreview {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
 }
 .preview{
+	display: flex;
+	justify-content: center;
 	background: #fff;
+	width: 100%;
+	/*background: #fff;
 	height: auto;
 	margin: 50px 0;
 	padding-top: 56.25%;
-	width: 90%;
+	width: 90%;*/
 }
-
+.imgratio{
+	width: 56.25%;
+}
 /* NAVIGATION - 'Back', prikker, 'Next'*/
 .navigation{
 	align-items: center;

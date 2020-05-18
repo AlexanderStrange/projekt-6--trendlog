@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="-en-DK">
+<head>
+	<!-- META-tags --->
+	<meta name="author" content="Gruppe 5">
+	<meta name="description" content="Track 2:  TrendLog.io og rapport design modulet">
+	<meta name="keywords" content="HTML,CSS,JavaScript, Trendlog.io, design, rapportmodul">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CSS-link --->
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+	<!-- JavaScript link(s) -->
+	<script type="text/javascript" src="../assets/javascript/amalie.js" defer></script>
+	<script type="text/javascript" src="../assets/javascript/alexander.js" defer></script>
+	<!-- TITLE-tag --->
+	<title>Create report</title>
+</head>
+<body>
+<!-- HEADER -->
+	<header>
+		<a href="./index.html"><img src="../assets/img/trendlogio.png" alt="Trendlog logo" class="headerlogo"></a>
+<!-- navigation -->
+		<nav>
+			<ul class="TRVFSS">
+				<li><a href="#"><img src="../assets/img/home.svg" alt="Home icon"></a></li>
+				<li><a href="#">Trendboards</a></li>
+				<li class="underline"><a href="./index.html">Reports</a></li>
+				<li><a href="#">Views</a></li>
+				<li><a href="#">Feed</a></li>
+				<li><a href="#">Settings</a></li>
+				<li><a href="#">Shares</a></li>
+			</ul>
+		</nav>
+		<nav>
+			<ul class="SFAP">
+				<li><a href="#"><img src="../assets/img/service.svg" alt="Service icon"></a></li>
+				<li><a href="#"><img src="../assets/img/follow.svg" alt="Follow icon"></a></li>
+				<li><a href="#"><img src="../assets/img/alert.svg" alt="Alert icon"></a></li>
+				<li><a href="#">Channels</a></li>
+				<li><select class="channel"><option selected>Your channel</option></select></li>
+				<div class="user">
+					<li><a href="#">Username</a></li>
+					<li><a href="#"><img src="../assets/img/profile.svg" alt="Profile icon"></a></li>
+					</div>
+			</ul>
+		</nav>
+<!-- burgermenu -->
+		<button type="button" class="burgermenu" onclick="burgermenu()">
+			<img src="../assets/img/burgermenu.svg" alt="Burgermenu icon">
+		</button>
+	</header>
+	<main>
+<!-- SECTION - left & right-->
+		<section>
+<!-- left -->
+			<div class="left">
+
+				<h2>Choose the data you want to visualise</h2>
+			  <form id="container">
+
+			    <a class="click-box" href="#">
+			      <div class="box">data1
+			        <!-- The grid: four columns -->
+			        <div class="row">
+			          <div class="column">
+			            <img src="../assets/img/graf1.svg" alt="søjle" onclick="myFunction(this);">
+			          </div>
+			          <div class="column">
+			            <img src="../assets/img/graf2.svg" alt="kurve" onclick="myFunction(this);">
+			          </div>
+			          <div class="column">
+			            <img src="../assets/img/graf3.svg" alt="lagkage" onclick="myFunction(this);">
+			          </div>
+			        </div>
+
+			      </div>
+			    </a>
+			    <a class="click-box" href="#">
+			    <div class="box">data2
+			    </div>
+			    </a>
+			    <a class="click-box" href="#">
+			    <div class="box">data3
+			    </div>
+			    </a>
+			    <div class="box"></div>
+			    <div class="box"></div>
+			    <div class="box"></div>
+			    <div class="box"></div>
+			    <div class="box"></div>
+			    <div class="box"></div>
+			    <div class="box"></div>
+			    <div class="box"></div>
+			    <div class="box"></div>
+			    </form>
+
+			</div>
+<!-- right -->
+		<div class="right">
+			<div class="preview">
+				<div class="imgratio">
+					<!-- The expanding image container -->
+					<div class="containerpreview">
+						<!-- Close the image -->
+						<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+						<!-- Expanded image -->
+						<img id="expandedImg" style="width:100%">
+						<!-- Image text -->
+						<div id="imgtext"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- NAVIGATION - 'Back', prikker, 'Next' - -->
+			<div class="navigation">
+				<button type="button" class="backnext"><a href="#">Back</a></button>
+				<div class="navdots">
+					<a href="./data.html"><div></div></a>
+					<a href="#"><div></div></a>
+					<a href="#"><div></div></a>
+					<a href="#"><div></div></a>
+				</div>
+				<button type="button" class="backnext"><a href="#">Next</a></button>
+			</div>
+		</section>
+	</main>
+	<footer></footer>
+</body>
+</html>

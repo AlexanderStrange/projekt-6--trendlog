@@ -13,3 +13,5 @@ function burgermenu(){
 			burgerTwo.style.display = "flex";
 		}
 }
+
+// Navigation (‘Back’, navigationsprikker og ‘Next’)
