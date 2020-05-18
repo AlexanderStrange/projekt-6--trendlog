@@ -102,48 +102,62 @@ nav{
 
 .landing   {
   height: 90%;
+  display: flex;
+  justify-content: center
 }
 
 .colorhead {
   display: flex;
   font-size: 50px;
+  margin-bottom: 2%;
   text-transform: uppercase;
   padding: 50px;
   justify-content: center;
-}
-
-/*menu med overlow*/
-
-
-h2{
-  margin-left: 5%;
-}
-
-
-
-#container {
-  overflow-y: scroll;
-  background: white;
-  display: block;
-  width: 40%;
-  height: 30%;
-  margin: 1% 0% 0% 5%;
-}
-
-.box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 2px;
-  height: 20%;
-  background: grey;
-  padding: 1.5%;
 
 }
-#submitbutton{
-  position: absolute;
-  top: 62%;
-  width: 8%;
-  height: 5%;
-  right: 80;
+
+/*content*/
+.underoverskrift{
+  text-align: center;
+  font-weight:  30;
+}
+
+#firstrow{
+display: flex;
+justify-content: space-between;
+width: auto;
+height: 15%;
+width: 30%;
+margin: auto;
+margin-top: 2%;
+margin-bottom: 2%;
+}
+
+.iconrow  {
+  height: 80%;
+  margin: auto;
+}
+
+.linktilicons{
+text-decoration: none;
+font-weight: 30;
+display: block;
+width: 10%;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+margin-top: 1%;
+margin-bottom: 2%;
+}
+
+#secondrow{
+display: flex;
+justify-content: space-between;
+width: auto;
+height: 15%;
+width: 50%;
+margin: auto;
+margin-top: 2%;
+margin-bottom: 2%;
+background: #333;
 }

@@ -124,3 +124,46 @@ h1 {
   width: 15%;
   margin: 2px;
 }
+
+
+#farve1 {
+  background: #2c3e50;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 2%;
+}
+
+
+#farve2 {
+  background: #222;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 2%;
+}
+
+#farve3 {
+  background: #5Cb85C;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 2%;
+}
+
+#farve4 {
+  background: #fff;
+  border: 1px solid #c7c7c7;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 2%;
+}
+
+#farve5 {
+  background: #3bc143;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 2%;
+}
