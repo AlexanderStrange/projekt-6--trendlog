@@ -243,6 +243,10 @@ h2{
 	background: #3bc143;
 }
 
+.navdots a:active, .navdots a:visited{
+	background: #3bc143;
+}
+
 /* FOOTER */
 
 /* RESPONSIVE */
