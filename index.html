@@ -52,22 +52,22 @@
 <!-- SECTION - left & right-->
 		<section>
 <!-- left -->
-			<div class="left">
+			<div id="left">
 			</div>
 <!-- right -->
-		<div class="right">
-			<div class="preview"></div>
-		</div>
+			<div id="right">
+				<div class="preview"></div>
+			</div>
 <!-- NAVIGATION - 'Back', prikker, 'Next' - -->
 			<div id="navigation">
-				<button type="button" id="backnext"><a href="#">Back</a></button>
+				<button type="button" class="backnext" onclick="back()">Back</button>
 				<div id="navdots">
-					<a href="./data.html"><div></div></a>
-					<a href="#"><div></div></a>
-					<a href="#"><div></div></a>
-					<a href="#"><div></div></a>
+					<div id ="dot1" class="dot dotactive" ></div>
+					<div id ="dot2" class="dot"></div>
+					<div id ="dot3" class="dot"></div>
+					<div id ="dot4" class="dot"></div>
 				</div>
-				<button type="button" id="backnext"><a href="#">Next</a></button>
+				<button type="button" class="backnext" onclick="next()">Next</button>
 			</div>
 		</section>
 	</main>

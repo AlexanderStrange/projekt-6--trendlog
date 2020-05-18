@@ -45,7 +45,7 @@
 			</ul>
 		</nav>
 <!-- burgermenu -->
-		<button type="button" class="burgermenu" onclick="burgermenu()">
+		<button type="button" id="burgermenu" onclick="burgermenu()">
 			<img src="../assets/img/burgermenu.svg" alt="Burgermenu icon">
 		</button>
 	</header>
@@ -53,7 +53,7 @@
 <!-- SECTION - left & right-->
 		<section>
 <!-- left -->
-			<div class="left">
+			<div id="left">
 
 				<h2>Choose the data you want to visualise</h2>
 			  <form id="container">
@@ -96,7 +96,7 @@
 
 			</div>
 <!-- right -->
-		<div class="right">
+		<div id="right">
 			<div class="preview">
 				<div class="imgratio">
 					<!-- The expanding image container -->
@@ -112,15 +112,15 @@
 			</div>
 		</div>
 <!-- NAVIGATION - 'Back', prikker, 'Next' - -->
-			<div class="navigation">
-				<button type="button" class="backnext"><a href="#">Back</a></button>
-				<div class="navdots">
-					<a href="./data.html"><div></div></a>
-					<a href="#"><div></div></a>
-					<a href="#"><div></div></a>
-					<a href="#"><div></div></a>
+			<div id="navigation">
+				<button type="button" class="backnext" onclick="back()">Back</button>
+				<div id="navdots">
+					<div id ="dot1" class="dot dotactive" ></div>
+					<div id ="dot2" class="dot"></div>
+					<div id ="dot3" class="dot"></div>
+					<div id ="dot4" class="dot"></div>
 				</div>
-				<button type="button" class="backnext"><a href="#">Next</a></button>
+				<button type="button" class="backnext" onclick="next()">Next</button>
 			</div>
 		</section>
 	</main>
