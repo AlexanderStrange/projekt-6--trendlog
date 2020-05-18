@@ -15,17 +15,12 @@
   <h2>Choose the data you want to visualise</h2>
   <form id="container" action="index.html" method="get" onsubmit="return is_checked()">
 
-    <div class="box">data1
-      <input type="checkbox" name="data" value="data" id="dataOne">
-    </div>
 
-    <div class="box">data2
-        <input type="checkbox" name="data" value="data" id="dataTwo">
-    </div>
+    <a href="#"><div class="box" onclick="show_graph()">data1</div></a>
 
-    <div class="box">data3
-      <input class="checkmark" type="checkbox" name="data" value="data" id="dataThree">
-    </div>
+    <div  class="box" onclick="show_graph()">data2</div>
+
+    <div  class="box" onclick="show_graph()">data3</div>
 
     <div class="box"></div>
     <div class="box"></div>
@@ -43,33 +38,13 @@
   </section>
 
   <section id="preview">
-    <!-- The grid: four columns -->
-    <div class="row">
-      <div class="column">
-        <img src="img/graph1.png" alt="søjle" onclick="myFunction(this);">
-      </div>
-      <div class="column">
-        <img src="img/graph2.png" alt="kurve" onclick="myFunction(this);">
-      </div>
-      <div class="column">
-        <img src="img/graph3.png" alt="lagkage" onclick="myFunction(this);">
-      </div>
-    </div>
-
-  <!-- The expanding image container -->
-  <div class="containerpreview">
-  <!-- Close the image -->
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <!-- Expanded image -->
-  <img id="expandedImg" style="width:100%">
-  <!-- Image text -->
-  <div id="imgtext"></div>
-  </div>
-
+    <img id="graf1" src="assets/graf1.svg" alt="graf1">
+    <img id="graf2" src="assets/graf2.svg" alt="graf2">
+    <img id="graf3" src="assets/graf3.svg" alt="graf3">
   </section>
 
 </section>
 
-<script type="text/javascript" src="script.js"></script>
+
   </body>
 </html>
