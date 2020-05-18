@@ -242,9 +242,11 @@ h2{
 .navdots a:hover, .backnext:hover{
 	background: #3bc143;
 }
-
-.navdots a:active, .navdots a:visited{
+.navdots a:active,{
 	background: #3bc143;
+}
+.navdots a:visited{
+	background: rgba(59, 193, 67, 0.80);
 }
 
 /* FOOTER */
