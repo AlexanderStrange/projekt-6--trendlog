@@ -21,6 +21,7 @@ header{
 	box-sizing: border-box;
 	color: #fff;
 	display: flex;
+	flex-wrap: wrap;
 	height: 50px;
 	margin-bottom: 5px;
 	padding: 0 15px;
@@ -33,7 +34,8 @@ header img{
 	height: 20px;
 	width: auto;
 }
-nav, .SFAP{
+/* navigation */
+nav{
 	align-items: center;
 	display: flex;
 }
@@ -71,6 +73,35 @@ header li{
 	height: 34px;
 	width: 200px;
 }
+/* burgermenu */
+.burgermenu, .burger{
+	display: none;
+}
+
+/* LEFT & RIGHT*/
+section{
+	display: flex;
+}
+.left, .right{
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+/* left */
+.left{
+	width: 40%;
+}
+/* right */
+.right{
+	width: 60%;
+}
+.preview{
+	background: #fff;
+	height: auto;
+	margin: 50px 0;
+	padding-top: 56.25%;
+	width: 90%;
+}
 
 /* NAVIGATION - 'Back', prikker, 'Next'*/
 .navigation{
@@ -79,7 +110,7 @@ header li{
 	display: flex;
 	height: 5%;
 	position: absolute;
-	right: 3%;
+	right: 5%;
 	width: 50%;
 }
 .backnext{
@@ -112,3 +143,52 @@ header li{
 }
 
 /* FOOTER */
+
+/* RESPONSIVE */
+/* burgermenu - 767px */
+@media screen and (max-width: 767px){
+	.burgermenu{
+		align-items: center;
+		background: inherit;
+		border: 1px solid #333;
+		display: flex;
+		height: 28px;
+		justify-content: center;
+		margin: 10px;
+		padding: 10px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 44px;
+	}
+	.burgermenu img{
+		height: 30px;
+		position: absolute;
+		width: auto;
+	}
+	.burgermenu:hover{
+		background: #3bc143;
+	}
+	.TRVFSS, .SFAP{
+		align-items: flex-start;
+		background: #222;
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		right: 0;
+		top: 50px;
+		width: 100%;
+	}
+	.SFAP{
+		top: 300px;
+	}
+	.TRVFSS li, .SFAP li{
+		margin: 10px;
+	}
+	.user{
+		border: 1px solid #333;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+}

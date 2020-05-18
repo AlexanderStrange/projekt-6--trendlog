@@ -9,45 +9,67 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- CSS-link --->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- JavaScript link(s) -->
+	<script type="text/javascript" src="assets/javascript/amalie.js" defer></script>
 	<!-- TITLE-tag --->
 	<title>Create report</title>
 </head>
 <body>
+<!-- HEADER -->
 	<header>
-		<a href="#"><img src="assets/img/trendlogio.png" alt="Trendlog logo" class="headerlogo"></a>
+		<a href="./index.html"><img src="assets/img/trendlogio.png" alt="Trendlog logo" class="headerlogo"></a>
+<!-- navigation -->
 		<nav>
 			<ul class="TRVFSS">
-				<li><a href="#"><img src="assets/img/home.svg" alt="Home icon"></a></li>
+				<li><a href="./index.html"><img src="assets/img/home.svg" alt="Home icon"></a></li>
 				<li><a href="#">Trendboards</a></li>
-				<li class="underline"><a href="#">Reports</a></li>
+				<li class="underline"><a href="./index.html">Reports</a></li>
 				<li><a href="#">Views</a></li>
 				<li><a href="#">Feed</a></li>
 				<li><a href="#">Settings</a></li>
 				<li><a href="#">Shares</a></li>
 			</ul>
 		</nav>
-		<ul class="SFAP">
-			<li><a href="#"><img src="assets/img/service.svg" alt="Service icon"></a></li>
-			<li><a href="#"><img src="assets/img/follow.svg" alt="Follow icon"></a></li>
-			<li><a href="#"><img src="assets/img/alert.svg" alt="Alert icon"></a></li>
-			<li><a href="#">Channels</a></li>
-			<li><select class="channel"><option selected>Your channel</option></select></li>
-			<li><a href="#">Brugernavn</a></li>
-			<li><a href="#"><img src="assets/img/profile.svg" alt="Profile icon"></a></li>
-		</ul>
+		<nav>
+			<ul class="SFAP">
+				<li><a href="#"><img src="assets/img/service.svg" alt="Service icon"></a></li>
+				<li><a href="#"><img src="assets/img/follow.svg" alt="Follow icon"></a></li>
+				<li><a href="#"><img src="assets/img/alert.svg" alt="Alert icon"></a></li>
+				<li><a href="#">Channels</a></li>
+				<li><select class="channel"><option selected>Your channel</option></select></li>
+				<div class="user">
+					<li><a href="#">Username</a></li>
+					<li><a href="#"><img src="assets/img/profile.svg" alt="Profile icon"></a></li>
+					</div>
+			</ul>
+		</nav>
+<!-- burgermenu -->
+		<button type="button" class="burgermenu" onclick="burgermenu()">
+			<img src="assets/img/burgermenu.svg" alt="Burgermenu icon">
+		</button>
 	</header>
 	<main>
-<!-- NAVIGATION - 'Back', prikker, 'Next' - -->		
-		<div class="navigation">
-			<button type="button" class="backnext"><a href="#">Back</a></button>
-			<div class="navdots">
-				<a href="#"><div></div></a>
-				<a href="#"><div></div></a>
-				<a href="#"><div></div></a>
-				<a href="#"><div></div></a>
+<!-- SECTION - left & right-->
+		<section>
+<!-- left -->
+			<div class="left">
 			</div>
-			<button type="button" class="backnext"><a href="#">Next</a></button>
+<!-- right -->
+		<div class="right">
+			<div class="preview"></div>
 		</div>
+<!-- NAVIGATION - 'Back', prikker, 'Next' - -->
+			<div class="navigation">
+				<button type="button" class="backnext"><a href="#">Back</a></button>
+				<div class="navdots">
+					<a href="#"><div></div></a>
+					<a href="#"><div></div></a>
+					<a href="#"><div></div></a>
+					<a href="#"><div></div></a>
+				</div>
+				<button type="button" class="backnext"><a href="#">Next</a></button>
+			</div>
+		</section>
 	</main>
 	<footer></footer>
 </body>
