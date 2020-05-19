@@ -238,8 +238,9 @@ h2{
 	display: flex;
 	height: 5%;
 	position: absolute;
-	right: 5%;
-	width: 50%;
+	right: 50%;
+	transform: translateX(50%);
+	width: 80%;
 }
 .backnext{
 	background: rgba(59, 193, 67, 0.80);
