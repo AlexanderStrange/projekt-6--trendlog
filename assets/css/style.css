@@ -58,14 +58,14 @@ header li{
 	font-weight: bold;
 	margin: 0 15px;
 }
-.SFAP{
+#SFAP{
 	position: absolute;
 	right: 0;
 }
 .underline{
 	text-decoration: underline #3bc143;
 }
-.channel{
+#channel{
 	background: #fff;
 	border: 1px solid #ccc;
 	border-radius: 4px;
@@ -74,7 +74,7 @@ header li{
 	width: 200px;
 }
 /* burgermenu */
-.burgermenu, .burger{
+#burgermenu{
 	display: none;
 }
 
@@ -82,14 +82,14 @@ header li{
 section{
 	display: flex;
 }
-.left, .right{
+#left, #right{
 	align-items: center;
 	display: flex;
 	justify-content: center;
 	padding: 5%;
 }
 /* left */
-.left{
+#left{
 	width: 40%;
 	display: flex;
   align-items: flex-end;
@@ -165,7 +165,7 @@ h2{
   clear: both;
 }
 /* right */
-.right{
+#right{
 	width: 60%;
 	display: flex;
   align-items: flex-end;
@@ -209,7 +209,7 @@ h2{
 	width: 56.25%;
 }
 /* NAVIGATION - 'Back', prikker, 'Next'*/
-.navigation{
+#navigation{
 	align-items: center;
 	bottom: 5%;
 	display: flex;
@@ -229,7 +229,7 @@ h2{
 	height: 100%;
 	width: 25%;
 }
-.navdots{
+#navdots{
 	align-items: center;
 	display: flex;
 	height: 75%;
@@ -237,14 +237,22 @@ h2{
 	margin: 0 10%;
 	width: 50%;
 }
-.navdots a{
-	background: lightgrey;
+#dot1, #dot2, #dot3, #dot4{}
+.dot{
+	background: #fff;
+	border: 0.25px solid #3bc143;
 	border-radius: 50%;
 	height: 25px;
 	width: 25px;
 }
-.navdots a:hover, .backnext:hover{
+.dot:hover, .backnext:hover{
 	background: #3bc143;
+}
+.dotafter{
+	background: rgba(59, 193, 67, 0.50);
+}
+.dotactive{
+	background: #3bc143;;
 }
 
 /* FOOTER */
@@ -252,7 +260,7 @@ h2{
 /* RESPONSIVE */
 /* burgermenu - 767px */
 @media screen and (max-width: 767px){
-	.burgermenu{
+	#burgermenu{
 		align-items: center;
 		background: inherit;
 		border: 1px solid #333;
@@ -266,15 +274,15 @@ h2{
 		top: 0;
 		width: 44px;
 	}
-	.burgermenu img{
+	#burgermenu img{
 		height: 30px;
 		position: absolute;
 		width: auto;
 	}
-	.burgermenu:hover{
+	#burgermenu:hover{
 		background: #3bc143;
 	}
-	.TRVFSS, .SFAP{
+	#TRVFSS, #SFAP{
 		align-items: flex-start;
 		background: #222;
 		display: none;
@@ -283,14 +291,15 @@ h2{
 		right: 0;
 		top: 50px;
 		width: 100%;
+		z-index: 1000;
 	}
-	.SFAP{
+	#SFAP{
 		top: 300px;
 	}
-	.TRVFSS li, .SFAP li{
+	#TRVFSS li, #SFAP li{
 		margin: 10px;
 	}
-	.user{
+	#user{
 		border: 1px solid #333;
 		display: flex;
 		justify-content: space-between;

@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- CSS-link --->
 	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-	<!-- JavaScript link(s) -->
+	<!-- JavaScript-link(s) -->
 	<script type="text/javascript" src="../assets/javascript/amalie.js" defer></script>
 	<script type="text/javascript" src="../assets/javascript/alexander.js" defer></script>
 	<!-- TITLE-tag --->
@@ -21,7 +21,7 @@
 		<a href="./index.html"><img src="../assets/img/trendlogio.png" alt="Trendlog logo" class="headerlogo"></a>
 <!-- navigation -->
 		<nav>
-			<ul class="TRVFSS">
+			<ul id="TRVFSS">
 				<li><a href="#"><img src="../assets/img/home.svg" alt="Home icon"></a></li>
 				<li><a href="#">Trendboards</a></li>
 				<li class="underline"><a href="./index.html">Reports</a></li>
@@ -32,20 +32,20 @@
 			</ul>
 		</nav>
 		<nav>
-			<ul class="SFAP">
+			<ul id="SFAP">
 				<li><a href="#"><img src="../assets/img/service.svg" alt="Service icon"></a></li>
 				<li><a href="#"><img src="../assets/img/follow.svg" alt="Follow icon"></a></li>
 				<li><a href="#"><img src="../assets/img/alert.svg" alt="Alert icon"></a></li>
 				<li><a href="#">Channels</a></li>
-				<li><select class="channel"><option selected>Your channel</option></select></li>
-				<div class="user">
+				<li><select id="channel"><option selected>Your channel</option></select></li>
+				<div id="user">
 					<li><a href="#">Username</a></li>
 					<li><a href="#"><img src="../assets/img/profile.svg" alt="Profile icon"></a></li>
-					</div>
+				</div>
 			</ul>
 		</nav>
 <!-- burgermenu -->
-		<button type="button" class="burgermenu" onclick="burgermenu()">
+		<button type="button" id="burgermenu" onclick="burgermenu()">
 			<img src="../assets/img/burgermenu.svg" alt="Burgermenu icon">
 		</button>
 	</header>
@@ -53,7 +53,7 @@
 <!-- SECTION - left & right-->
 		<section>
 <!-- left -->
-			<div class="left">
+			<div id="left">
 
 				<h2>Choose the data you want to visualise</h2>
 			  <form id="container">
@@ -96,7 +96,7 @@
 
 			</div>
 <!-- right -->
-		<div class="right">
+		<div id="right">
 			<div class="preview">
 				<div class="imgratio">
 					<!-- The expanding image container -->
@@ -112,16 +112,16 @@
 			</div>
 		</div>
 <!-- NAVIGATION - 'Back', prikker, 'Next' - -->
-			<div class="navigation">
-				<button type="button" class="backnext"><a href="#">Back</a></button>
-				<div class="navdots">
-					<a href="./data.html"><div></div></a>
-					<a href="#"><div></div></a>
-					<a href="#"><div></div></a>
-					<a href="#"><div></div></a>
+			<div id="navigation">
+				<button type="button" class="backnext" onclick="back()">Back</button>
+				<div id="navdots">
+					<div id ="dot1" class="dot dotactive"></div>
+					<div id ="dot2" class="dot"></div>
+					<div id ="dot3" class="dot"></div>
+					<div id ="dot4" class="dot"></div>
 				</div>
-		</div>
-
+				<button type="button" class="backnext" onclick="next()">Next</button>
+			</div>
 		</section>
 	</main>
 	<footer></footer>

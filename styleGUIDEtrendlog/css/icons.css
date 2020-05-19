@@ -101,49 +101,118 @@ nav{
 /*landing page (1)*/
 
 .landing   {
-  height: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center
 }
 
 .colorhead {
   display: flex;
   font-size: 50px;
+  margin-bottom: 2%;
   text-transform: uppercase;
   padding: 50px;
   justify-content: center;
+
 }
 
-/*menu med overlow*/
-
-
-h2{
-  margin-left: 5%;
+/*content*/
+.underoverskrift{
+  text-align: center;
+  font-weight:  30;
 }
 
+#firstrow{
+display: flex;
+justify-content: space-between;
+width: auto;
+height: 15%;
+width: 30%;
+margin: auto;
+margin-top: 2%;
+margin-bottom: 4%;
+}
 
+.iconrow  {
+  height: 80%;
+  margin: auto;
+}
 
-#container {
-  overflow-y: scroll;
-  background: white;
+.linktilicons{
+  text-decoration: none;
+  font-weight: 30;
   display: block;
-  width: 40%;
-  height: 30%;
-  margin: 1% 0% 0% 5%;
+  width: 10%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: 2%;
 }
 
-.box {
+#secondrow{
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  margin-bottom: 2px;
-  height: 20%;
-  background: grey;
-  padding: 1.5%;
-
+  width: auto;
+  height: 15%;
+  width: 50%;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  background: #333;
 }
-#submitbutton{
-  position: absolute;
-  top: 62%;
-  width: 8%;
+
+
+/*prikker, back next*/
+
+#thirdrow {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
   height: 5%;
-  right: 80;
+  width: 50%;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  background: #333;
+  padding: 5%;
+}
+
+
+
+.navigation{
+  position: absolute;
+	display: flex;
+  justify-content: flex-end;
+	height: 5%;
+	width: 50%;
+}
+.backnext{
+  text-decoration: none;
+	background: rgba(59, 193, 67, 0.80);
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	height: 100%;
+	width: 25%;
+}
+.navdots{
+	align-items: center;
+	display: flex;
+	height: 75%;
+	justify-content: space-around;
+	margin: 0 10%;
+	width: 50%;
+}
+.navdots a{
+	background: lightgrey;
+	border-radius: 50%;
+	height: 25px;
+	width: 25px;
+}
+.navdots a:hover, .backnext:hover{
+	background: #3bc143;
 }

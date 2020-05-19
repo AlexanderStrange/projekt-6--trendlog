@@ -154,11 +154,10 @@ section {
 
 p {
   line-height: 2.5em;
-  text-align: justify;
 }
 
   img{
-    background-color: #9d9d9d;
+    background-color: #222;
     padding: 20px;
 
   }
