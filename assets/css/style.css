@@ -85,7 +85,6 @@ section{
 #left, #right{
 	align-items: center;
 	display: flex;
-	justify-content: center;
 	padding: 5%;
 }
 /* left */
@@ -186,6 +185,7 @@ h2{
 	width: 60%;
 	display: flex;
   align-items: flex-start;
+	justify-content: center;
 }
 /* The expanding image container (positioning is needed to position the close button and the text) */
 .containerpreview {
@@ -230,14 +230,32 @@ h2{
 .colourimgratio{
 	width: 100%;
 }
+/*centered*/
+.centered{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+	padding: 5%;
+}
+.previewtext{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.finalpreview{
+	max-width: 50%;
+	padding-top: 2rem;
+}
 /* NAVIGATION - 'Back', prikker, 'Next'*/
 #navigation{
 	align-items: center;
-	bottom: 5%;
+	/*bottom: 5%;*/
 	display: flex;
 	height: 5%;
-	position: absolute;
-	right: 5%;
+	/*position: absolute;*/
+	/*right: 5%;*/
 	width: 50%;
 }
 .backnext{
