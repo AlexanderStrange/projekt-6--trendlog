@@ -13,7 +13,7 @@
 	<script type="text/javascript" src="../assets/javascript/amalie.js" defer></script>
 	<script type="text/javascript" src="../assets/javascript/alexander.js" defer></script>
 	<!-- TITLE-tag --->
-	<title>Choose layout</title>
+	<title>Create report</title>
 </head>
 <body>
 <!-- HEADER -->
@@ -54,45 +54,58 @@
 		<section>
 <!-- left -->
 			<div id="left">
-				<h2>Choose the layout</h2>
-				<form id="colourcontainer">
-					<div class="colourrow">
-						<div class="colourcolumn">
-							<img class="smallcolourpreview" src="../assets/img/layout.svg" alt="layout1" onclick="myFunction(this);">
-						</div>
-						<div class="colourcolumn">
-							<img class="smallcolourpreview" src="../assets/img/layout.svg" alt="layout2" onclick="myFunction(this);">
-						</div>
-					</div>
-					<div class="colourrow">
-						<div class="colourcolumn">
-							<img class="smallcolourpreview" src="../assets/img/layout.svg" alt="layout3" onclick="myFunction(this);">
-						</div>
-						<div class="colourcolumn">
-							<img class="smallcolourpreview" src="../assets/img/layout.svg" alt="layout4" onclick="myFunction(this);">
-						</div>
-					</div>
-					<div class="colourrow">
-						<div class="colourcolumn">
-							<img class="smallcolourpreview" src="../assets/img/layout.svg" alt="layout5" onclick="myFunction(this);">
-						</div>
-						<div class="colourcolumn">
-							<img class="smallcolourpreview" src="../assets/img/layout.svg" alt="layout6" onclick="myFunction(this);">
-						</div>
-					</div>
-				 </form>
+
+				<h2>Choose the data you want to visualise</h2>
+			  <form id="container">
+
+			    <a class="click-box" href="#">
+			      <div class="box">data1
+			        <!-- The grid: four columns -->
+			        <div class="row">
+			          <div class="column">
+			            <img src="../assets/img/graf1.svg" alt="søjle" onclick="myFunction(this);">
+			          </div>
+			          <div class="column">
+			            <img src="../assets/img/graf2.svg" alt="kurve" onclick="myFunction(this);">
+			          </div>
+			          <div class="column">
+			            <img src="../assets/img/graf3.svg" alt="lagkage" onclick="myFunction(this);">
+			          </div>
+			        </div>
+
+			      </div>
+			    </a>
+			    <a class="click-box" href="#">
+			    <div class="box">data2
+			    </div>
+			    </a>
+			    <a class="click-box" href="#">
+			    <div class="box">data3
+			    </div>
+			    </a>
+			    <div class="box"></div>
+			    <div class="box"></div>
+			    <div class="box"></div>
+			    <div class="box"></div>
+			    <div class="box"></div>
+			    <div class="box"></div>
+			    <div class="box"></div>
+			    <div class="box"></div>
+			    <div class="box"></div>
+			    </form>
+
 			</div>
 <!-- right -->
 		<div id="right">
 			<div class="preview">
-				<div class="colourimgratio">
-<!-- The expanding image container -->
+				<div class="imgratio">
+					<!-- The expanding image container -->
 					<div class="containerpreview">
-<!-- Close the image -->
+						<!-- Close the image -->
 						<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-<!-- Expanded image -->
+						<!-- Expanded image -->
 						<img id="expandedImg" style="width:100%">
-<!-- Image text -->
+						<!-- Image text -->
 						<div id="imgtext"></div>
 					</div>
 				</div>

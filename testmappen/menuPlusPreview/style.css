@@ -22,7 +22,7 @@ html, body{
 
 
 
-/*højre side af skærmen (menuen)*/
+/*venstre side af skærmen (menuen)*/
 
 }
 
@@ -61,21 +61,21 @@ h2{
   }
 
 
-
-#submitbutton{
-  position: absolute;
-  top: 66%;
-  width: 5%;
-  height: 5%;
-
-}
-
 /*venstre side af skærmen*/
-
-
 
 #preview{
   display: none;
   width: 20%;
   height: 20%;
+}
+
+
+
+#dropdown{
+  display: none;
+}
+
+
+#dropdown.active{
+display: block;
 }
