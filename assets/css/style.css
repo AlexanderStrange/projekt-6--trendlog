@@ -210,17 +210,22 @@ h2{
 }
 
 /* LAYOUT.html */
-#layouts{
+.content{
+	align-items: flex-start;
 	display: flex;
-	height: auto;
-	width: 90%;
+	flex-wrap: wrap;
+	height: 500px;
+	width: 100%;
 
 	background: red;
 }
 
-.layoutbox{
-	height: 10%;
-	width: 30%;
+.contentbox{
+	height: 25%;
+	margin: 10px;
+	width: 40%;
+
+	background: green;
 }
 
 /* NAVIGATION - 'Back', prikker, 'Next'*/
