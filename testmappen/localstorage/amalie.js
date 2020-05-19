@@ -1,15 +1,12 @@
 function localStorage(){
 	if (localStorage.getItem("dataOne") != null) {
-		document.getElementById("expandedImg").src = localStorage.getItem("dataOne");
+		document.getElementById("containerpreview2").src = localStorage.getItem("dataOne");
 	}
 	if (localStorage.getItem("dataTwo") != null) {
 		document.getElementById("expandedImg").src = localStorage.getItem("dataTwo");
 	}
-	if (localStorage.getItem("dataTwo") != null) {
-		document.getElementById("expandedImg").src = localStorage.getItem("dataTree");
-	}
-	if (localStorage.getItem("fundet4") != null) {
-		document.getElementById("expandedImg").src = localStorage.getItem("dataFour");
+	if (localStorage.getItem("dataThree") != null) {
+		document.getElementById("expandedImg").src = localStorage.getItem("dataThree");
 	}
 }
 
