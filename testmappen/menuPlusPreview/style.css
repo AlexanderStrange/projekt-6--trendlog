@@ -22,7 +22,7 @@ html, body{
 
 
 
-/*højre side af skærmen (menuen)*/
+/*venstre side af skærmen (menuen)*/
 
 }
 
@@ -72,10 +72,13 @@ h2{
 
 /*venstre side af skærmen*/
 
-
-
 #preview{
   display: none;
   width: 20%;
   height: 20%;
+}
+
+.hidden{
+  display: none;
+
 }
