@@ -85,6 +85,7 @@ section{
 #left, #right{
 	align-items: center;
 	display: flex;
+	height: auto;
 	justify-content: center;
 	padding: 5%;
 }
@@ -92,15 +93,23 @@ section{
 #left{
 	width: 40%;
 	display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
 	flex-direction: column;
 }
 h2{
+	color: #fff;
 }
 
 #container {
   overflow-y: scroll;
   background: white;
+  display: block;
+  width: 100%;
+  height: 30%;
+	flex: auto;
+}
+#colourcontainer {
+  overflow-y: scroll;
   display: block;
   width: 100%;
   height: 30%;
@@ -164,11 +173,20 @@ h2{
   display: table;
   clear: both;
 }
+.colourrow{
+	display: flex;
+}
+.colourcolumn{
+	width: 50%;
+}
+.smallcolourpreview{
+	width: 90%;
+}
 /* right */
 #right{
 	width: 60%;
 	display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 /* The expanding image container (positioning is needed to position the close button and the text) */
 .containerpreview {
@@ -199,14 +217,19 @@ h2{
 	justify-content: center;
 	background: #fff;
 	width: 100%;
-	/*background: #fff;
-	height: auto;
-	margin: 50px 0;
-	padding-top: 56.25%;
-	width: 90%;*/
 }
+
+.colourpreview{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
 .imgratio{
 	width: 56.25%;
+}
+.colourimgratio{
+	width: 100%;
 }
 /* NAVIGATION - 'Back', prikker, 'Next'*/
 #navigation{
