@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="-en-DK">
+<head>
+	<!-- META-tags --->
+	<meta name="author" content="Gruppe 5">
+	<meta name="description" content="Track 2:  TrendLog.io og rapport design modulet">
+	<meta name="keywords" content="HTML,CSS,JavaScript, Trendlog.io, design, rapportmodul">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CSS-link --->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+	<!-- JavaScript-link(s) -->
+	<script type="text/javascript" src="../../assets/javascript/amalie.js" defer></script>
+	<script type="text/javascript" src="../../assets/javascript/alexander.js" defer></script>
+	<!-- TITLE-tag --->
+	<title>TEST2</title>
+</head>
+<body>
+<!-- HEADER -->
+	<header>
+		<a href="./index.html"><img src="=../../assets/img/trendlogio.png" alt="Trendlog logo" class="headerlogo"></a>
+<!-- SECTION - left & right-->
+		<section>
+<!-- left -->
+			<div id="left">
+				<h2>Choose the layout</h2>
+				<form id="colourcontainer">
+					<div class="colourrow">
+						<div class="colourcolumn">
+							<img class="smallcolourpreview" src="../../assets/img/layout.svg" alt="layout1" onclick="myFunction(this);">
+						</div>
+						<div class="colourcolumn">
+							<img class="smallcolourpreview" src="../../assets/img/layout.svg" alt="layout2" onclick="myFunction(this);">
+						</div>
+					</div>
+					<div class="colourrow">
+						<div class="colourcolumn">
+							<img class="smallcolourpreview" src="../../assets/img/layout.svg" alt="layout3" onclick="myFunction(this);">
+						</div>
+						<div class="colourcolumn">
+							<img class="smallcolourpreview" src="../../assets/img/layout.svg" alt="layout4" onclick="myFunction(this);">
+						</div>
+					</div>
+					<div class="colourrow">
+						<div class="colourcolumn">
+							<img class="smallcolourpreview" src="../../assets/img/layout.svg" alt="layout5" onclick="myFunction(this);">
+						</div>
+						<div class="colourcolumn">
+							<img class="smallcolourpreview" src="../../assets/img/layout.svg" alt="layout6" onclick="myFunction(this);">
+						</div>
+					</div>
+				 </form>
+			</div>
+<!-- right -->
+		<div id="right">
+			<div class="preview">
+				<div class="colourimgratio">
+<!-- The expanding image container -->
+					<div class="containerpreview">
+<!-- Close the image -->
+						<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+<!-- Expanded image -->
+						<img id="expandedImg" style="width:100%">
+<!-- Image text -->
+						<div id="imgtext"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- NAVIGATION - 'Back', prikker, 'Next' - -->
+			<div id="navigation">
+				<button type="button" class="backnext" onclick="back()">Back</button>
+				<div id="navdots">
+					<div id ="dot1" class="dot dotafter" onClick="location.href='data.html'"></div>
+					<div id ="dot2" class="dot dotactive" onClick="location.href='layout.html'"></div>
+					<div id ="dot3" class="dot" onClick="location.href='colours.html'"></div>
+					<div id ="dot4" class="dot" onClick="location.href='final-preview.html'"></div>
+				</div>
+				<button type="button" class="backnext" onclick ="localStorage()">Next</button>
+				<a href="test1.html" onclick ="localStorage()">TEST1</a>
+			</div>
+		</section>
+	</main>
+	<footer></footer>
+</body>
+</html>
