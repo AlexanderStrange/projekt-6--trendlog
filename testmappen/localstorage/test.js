@@ -1,12 +1,15 @@
-function localStorage(){
+localStorage.setItem('dataOne','expandedImg');
+
+function localStorageImag(){
+	var dataOne = document.getElementById('expandedImg')
 	if (localStorage.getItem("dataOne") != null) {
-		document.getElementById("containerpreview2").src = localStorage.getItem("dataOne");
+		document.querySelector(".preview").src = localStorage.getItem("dataOne");
 	}
 	if (localStorage.getItem("dataTwo") != null) {
-		document.getElementById("expandedImg").src = localStorage.getItem("dataTwo");
+		document.querySelector(".preview").src = localStorage.getItem("dataTwo");
 	}
 	if (localStorage.getItem("dataThree") != null) {
-		document.getElementById("expandedImg").src = localStorage.getItem("dataThree");
+		document.querySelector(".preview").src = localStorage.getItem("dataThree");
 	}
 }
 
