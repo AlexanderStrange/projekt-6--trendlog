@@ -208,6 +208,21 @@ h2{
 .imgratio{
 	width: 56.25%;
 }
+
+/* LAYOUT.html */
+#layouts{
+	display: flex;
+	height: auto;
+	width: 90%;
+
+	background: red;
+}
+
+.layoutbox{
+	height: 10%;
+	width: 30%;
+}
+
 /* NAVIGATION - 'Back', prikker, 'Next'*/
 #navigation{
 	align-items: center;
