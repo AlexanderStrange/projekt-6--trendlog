@@ -15,7 +15,6 @@ function burgermenu(){
 }
 
 // NAVIGATION (‘Back’, navigationsprikker og ‘Next’)
-//step1a
 	let step = 'step1';
 	let step1Page = 'data';
 	let step2Page = 'layout';
