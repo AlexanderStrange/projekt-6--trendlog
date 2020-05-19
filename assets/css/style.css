@@ -85,6 +85,7 @@ section{
 #left, #right{
 	align-items: center;
 	display: flex;
+	height: auto;
 	justify-content: center;
 	padding: 5%;
 }
@@ -207,25 +208,6 @@ h2{
 }
 .imgratio{
 	width: 56.25%;
-}
-
-/* LAYOUT.html */
-.content{
-	align-items: flex-start;
-	display: flex;
-	flex-wrap: wrap;
-	height: 500px;
-	width: 100%;
-
-	background: red;
-}
-
-.contentbox{
-	height: 25%;
-	margin: 10px;
-	width: 40%;
-
-	background: green;
 }
 
 /* NAVIGATION - 'Back', prikker, 'Next'*/
