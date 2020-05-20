@@ -28,19 +28,28 @@ HTML - nye boks til item ('overbil' - 'expandedImg')
 // 		document.getElementById("overbil1").src = localStorage.getItem("fundet1");
 // }
 
+// function saveLocal(){
+// 	var test1 = document.getElementById("graf1")
+// 	if (typeof(Storage) !== "undefined") {
+// 		//CANVAS
+// 		var imgCanvas = document.createElement("canvas");
+// 			imgCanvas.width = test1.width;
+// 	    imgCanvas.height = test1.height;
+// 	// SET
+// 		localStorage.setItem("test", "graf1");
+// 	// GET
+// 	  document.getElementById("box1").innerHTML = localStorage.getItem("test");
+// 	} else {
+// 	  document.getElementById("box1").innerHTML = "Sorry, your browser does not support Web Storage...";
+// 	}
+// }
 
 function saveLocal(){
-	var test1 = document.getElementById("graf1")
-	if (typeof(Storage) !== "undefined") {
-		//CANVAS
-		var imgCanvas = document.createElement("canvas");
-			imgCanvas.width = test1.width;
-	    imgCanvas.height = test1.height;
-	// SET
-		localStorage.setItem("test", "graf1");
-	// GET
-	  document.getElementById("box1").innerHTML = localStorage.getItem("test");
-	} else {
-	  document.getElementById("box1").innerHTML = "Sorry, your browser does not support Web Storage...";
+	if (localStorage.getItem("graf1") != null) {
+		document.getElementById("box1").src = localStorage.getItem("graf1");
 	}
+}
+var empty = document.querySelector(".empty");
+if (empty.src.match("//:0")){
+	silhouet.src = "../../assets/img/graf1.svg";
 }
