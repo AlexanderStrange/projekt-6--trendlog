@@ -239,6 +239,19 @@ opacity: 100%;
   align-items: flex-start;
 	justify-content: center;
 }
+#pregraf{
+	display: flex;
+	height: auto;
+	position: absolute;
+	top: 10%;
+	width: 100%;
+	z-index: 100;
+}
+.grafpic{
+	height: auto;
+	margin-left: 8.5%;
+	width: 10%;
+}
 
 /* The expanding image container (positioning is needed to position the close button and the text) */
 .containerpreview {
@@ -310,18 +323,17 @@ footer{
 	align-items: center;
 	bottom: 0;
 	display: flex;
-	height: 15%;
+	height: 100px;
 	justify-content: center;
 	margin-top: 30px;
 	position: absolute;
 	width: 100%;
-
 }
 /* NAVIGATION - 'Back', prikker, 'Next'*/
 #navigation{
 	align-items: center;
 	display: flex;
-	height: 25%;
+	height: 30px;
 	justify-content: center;
 	width: 50%;
 }
@@ -363,7 +375,7 @@ footer{
 
 /* RESPONSIVE */
 /* burgermenu - 767px */
-@media screen and (max-width: 767px){
+@media screen and (max-width: 1320px){
 	#burgermenu{
 		align-items: center;
 		background: inherit;
@@ -408,5 +420,16 @@ footer{
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
+	}
+}
+
+/* burgermenu - 767px */
+@media screen and (max-width: 1050px){
+	section{
+		align-items: center;
+		flex-direction: column;
+	}
+	footer{
+		position: relative;
 	}
 }

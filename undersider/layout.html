@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="-en-DK">
+<html lang="en-DK">
 <head>
-	<!-- META-tags --->
+	<!-- META-tags -->
 	<meta name="author" content="Gruppe 5">
 	<meta name="description" content="Track 2:  TrendLog.io og rapport design modulet">
 	<meta name="keywords" content="HTML,CSS,JavaScript, Trendlog.io, design, rapportmodul">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- CSS-link --->
+	<!-- CSS-link -->
 	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 	<!-- JavaScript-link(s) -->
-	<script type="text/javascript" src="../assets/javascript/amalie.js" defer></script>
+	<script src="../assets/javascript/amalie.js" defer></script>
 	<script type="text/javascript" src="../assets/javascript/alexander.js" defer></script>
-	<!-- TITLE-tag --->
+	<!-- TITLE-tag -->
 	<title>Choose layout</title>
 </head>
 <body>
@@ -56,6 +56,7 @@
 			<div id="left">
 				<h2>Choose the layout</h2>
 				<form id="colourcontainer">
+
 					<div class="colourrow">
 						<div class="colourcolumn">
 							<img class="smallcolourpreview" src="../assets/img/layout.svg" alt="layout1" onclick="myFunction(this);">
@@ -86,9 +87,14 @@
 		<div id="right">
 			<div class="preview">
 				<div class="colourimgratio">
-
 <!-- The expanding image container -->
 					<div class="containerpreview">
+<!-- Preview grafer -->
+						<div id="pregraf">
+							<img src="../assets/img/graf1.svg" alt="søjle" class="grafpic">
+							<img src="../assets/img/graf2.svg" alt="kurve" class="grafpic">
+							<img src="../assets/img/graf3.svg" alt="lagkage" class="grafpic">
+						</div>
 <!-- Close the image -->
 						<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 <!-- Expanded image -->
