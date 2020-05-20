@@ -95,16 +95,18 @@ section{
 	flex-direction: column;
 }
 h2{
+	font-size: 2em;
+	margin-bottom: 5%;
 	color: #fff;
 }
 
 #container {
   overflow-y: scroll;
-  background: white;
+  background: #222;
   display: block;
   width: 100%;
-  height: 30%;
-	flex: auto;
+  height: 79.2%;
+
 }
 #colourcontainer {
   overflow-y: scroll;
@@ -119,16 +121,11 @@ h2{
   align-items: center;
   justify-content: space-between;
   margin-bottom: 2px;
-  height: 12%;
-  background: grey;
-  padding: 1.5%;
-
-}
-#submitbutton{
-  position: absolute;
-  top: 66%;
-  width: 5%;
-  height: 5%;
+  height: 10%;
+  background: white;
+  padding: 2.7%;
+	text-transform: uppercase;
+	font-weight: bold;
 
 }
 
@@ -138,7 +135,7 @@ h2{
   text-decoration: none;
 }
 .box:hover{
-  background-color: #fff;
+  background-color: #5Cb85C;
   transition: 0.3s;
 }
 
@@ -152,6 +149,9 @@ h2{
   float: left;
   width: 25%;
   padding: 10px;
+	background: #fff;
+	margin: 2px;
+	opacity: 80%;
 }
 
 /* Style the images inside the grid */
@@ -159,6 +159,10 @@ h2{
   width: 2rem;
   opacity: 0.8;
   cursor: pointer;
+}
+
+.column:hover{
+opacity: 100%;
 }
 
 .column img:hover {
