@@ -239,25 +239,6 @@ opacity: 100%;
 	justify-content: center;
 }
 
-/* iframe */
-#iframebox{
-	border: none;
-	display: flex;
-	margin: 0 30px;
-	position: absolute;
-	width: 100%;
-	z-index: 100;
-	background: red;
-}
-iframe{
-	background: red;
-	border: none;
-	margin: 0 30px;
-	position: absolute;
-	width: 80px;
-
-	background: green;
-}
 /* The expanding image container (positioning is needed to position the close button and the text) */
 .containerpreview {
   position: relative;
@@ -327,7 +308,7 @@ footer{
 	height: 15%;
 	justify-content: center;
 	margin-top: 30px;
-	position: fixed;
+	position: absolute;
 	width: 100%;
 
 }
@@ -355,7 +336,7 @@ footer{
 	display: flex;
 	height: 75%;
 	justify-content: space-evenly;
-	margin: 0 2.5px;
+	margin: 0 10px;
 	width: 50%;
 }
 #dot1, #dot2, #dot3, #dot4{}
