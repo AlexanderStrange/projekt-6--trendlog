@@ -12,8 +12,7 @@
 	<!-- JavaScript-link(s) -->
 	<script type="text/javascript" src="../assets/javascript/amalie.js" defer></script>
 	<script type="text/javascript" src="../assets/javascript/alexander.js" defer></script>
-	<script type="text/javascript" src="../assets/javascript/caspss.js" defer></script>
-	<script type="text/javascript" src="../assets/javascript/karina.js" defer></script>
+	<script type="text/javascript" src="karina.js" defer></script>
 
 	<!-- TITLE-tag --->
 	<title>Create report</title>
@@ -60,17 +59,9 @@
 
 				<h2>Choose the data you want to visualise</h2>
 			  <form id="container">
-<!-- Search bar -->
-					<div class="containersearch">
-			      <div class="search-contain">
-			        <img src="../assets/img/search.svg" alt="Search Button" id="search-btn">
-			        <input type="text" id="search" placeholder="">
-			        <p id="tip"> Hit enter to search</p>
 
-			      </div>
-			    </div>
-
-			      <div class="box" onclick="change_color()">data
+			    <a class="click-box" href="#">
+			      <div class="box">data1
 			        <!-- The grid: four columns -->
 			        <div class="row">
 			          <div class="column">
@@ -83,14 +74,17 @@
 			            <img src="../assets/img/graf3.svg" alt="lagkage" onclick="myFunction(this);">
 			          </div>
 			        </div>
+
 			      </div>
-
-
-			    <div class="box">data</div>
-
-
-			    <div class="box">data</div>
-
+			    </a>
+			    <a class="click-box" href="#">
+			    <div class="box">data2
+			    </div>
+			    </a>
+			    <a class="click-box" href="#">
+			    <div class="box">data3
+			    </div>
+			    </a>
 			    <div class="box"></div>
 			    <div class="box"></div>
 			    <div class="box"></div>
@@ -113,25 +107,26 @@
 						<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 						<!-- Expanded image -->
 						<img id="expandedImg" style="width:100%">
+						<script type="text/javascript">localStorage.SetItem("dataOne");</script>
 						<!-- Image text -->
 						<div id="imgtext"></div>
 					</div>
 				</div>
 			</div>
 		</div>
-<!-- FOOTER -->
-	<footer>
 <!-- NAVIGATION - 'Back', prikker, 'Next' - -->
-		<div id="navigation">
-			<button type="button" class="backnext" onclick="back()">Back</button>
-			<div id="navdots">
-				<div id ="dot1" class="dot dotactive" onClick="location.href='data.html'"></div>
-				<div id ="dot2" class="dot" onClick="location.href='layout.html'"></div>
-				<div id ="dot3" class="dot" onClick="location.href='colours.html'"></div>
-				<div id ="dot4" class="dot" onClick="location.href='final-preview.html'"></div>
+			<div id="navigation">
+				<button type="button" class="backnext" onclick="back()">Back</button>
+				<div id="navdots">
+					<div id ="dot1" class="dot dotactive"></div>
+					<div id ="dot2" class="dot"></div>
+					<div id ="dot3" class="dot"></div>
+					<div id ="dot4" class="dot"></div>
+				</div>
+				<button type="button" class="backnext" onclick="next()">Next</button>
 			</div>
-			<button type="button" class="backnext" onclick="next()">Next</button>
-		</div>
-	</footer>
+		</section>
+	</main>
+	<footer></footer>
 </body>
 </html>

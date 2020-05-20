@@ -1,0 +1,48 @@
+
+
+h1 {
+  color: white;
+  font-size: 1.5em;
+
+}
+
+.container {
+  text-align: center;
+
+}
+
+#search  {
+  font-family: 'arial';
+  background-color: rgb(76, 183, 72);
+  width: 15px;
+  height: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  outline: none;
+
+}
+&::placeholder{
+    color: white;
+
+}
+#search-btn {
+  width: 22px;
+  margin: 18px 0 0 18px;
+  position: absolute;
+  cursor:pointer;
+}
+
+#tip {
+  color: white;
+  text-transform: uppercase;
+  font-size: .6em;
+  text-align: left;
+  margin-left: 50px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 2s;
+}
