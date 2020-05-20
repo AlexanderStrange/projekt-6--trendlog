@@ -1,9 +1,9 @@
-localStorage.setItem('dataOne','expandedImg');
+localStorage.setItem('expandedImg', 'dataOne');
 
 function localStorageImag(){
 	var dataOne = document.getElementById('expandedImg')
 	if (localStorage.getItem("dataOne") != null) {
-		document.querySelector(".preview").src = localStorage.getItem("dataOne");
+		document.getElementById("test1").src = localStorage.getItem("dataOne");
 	}
 	if (localStorage.getItem("dataTwo") != null) {
 		document.querySelector(".preview").src = localStorage.getItem("dataTwo");
