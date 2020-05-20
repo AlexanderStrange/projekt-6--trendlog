@@ -23,7 +23,7 @@ function burgermenu(){
 	//next
 function next(){
 	if (window.location.href.indexOf(step1Page) > 0){
-		step = window.location.href.slice(0, (window.location.href.length - (step1Page.length + 5))) + step2Page + '.html';
+		step = window.location.href.slice(0, (window.location.href.length - (step1Page.length + 6))) + step2Page + '.html';
 		window.location.href = step;
 	} else if (window.location.href.indexOf(step2Page) > 0){
 		step = window.location.href.slice(0, (window.location.href.length - (step2Page.length + 5))) + step3Page + '.html';
