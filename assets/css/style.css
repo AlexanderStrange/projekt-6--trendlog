@@ -81,6 +81,7 @@ header li{
 /* LEFT & RIGHT*/
 section{
 	display: flex;
+	height: 100%;
 }
 #left, #right{
 	align-items: center;
@@ -93,6 +94,7 @@ section{
 	display: flex;
   align-items: flex-start;
 	flex-direction: column;
+	height: 100%;
 }
 h2{
 	font-size: 2em;
@@ -105,7 +107,7 @@ h2{
   background: #222;
   display: block;
   width: 100%;
-  height: 79.2%;
+  height: 100%;
 
 }
 #colourcontainer {
@@ -126,14 +128,13 @@ h2{
   padding: 2.7%;
 	text-transform: uppercase;
 	font-weight: bold;
+	cursor: pointer;
 
 }
 
 /*venstre side af skærmen*/
 
-.click-box{
-  text-decoration: none;
-}
+
 .box:hover{
   background-color: #5Cb85C;
   transition: 0.3s;
@@ -194,7 +195,7 @@ opacity: 100%;
 /* The expanding image container (positioning is needed to position the close button and the text) */
 .containerpreview {
   position: relative;
-  display: none;
+	height: 500px;
 }
 
 /* Expanding image text */
@@ -220,6 +221,10 @@ opacity: 100%;
 	justify-content: center;
 	background: #fff;
 	width: 100%;
+	height: 99%;
+	flex: auto;
+	border: solid black 5px;
+	align-items: center;
 }
 
 .colourpreview{
