@@ -28,8 +28,19 @@ HTML - nye boks til item ('overbil' - 'expandedImg')
 // 		document.getElementById("overbil1").src = localStorage.getItem("fundet1");
 // }
 
+
 function saveLocal(){
-	if (localStorage.getItem("test1") != null) {
-		document.getElementById("box1").innerHTML = localStorage.getItem("test1");
+	var test1 = document.getElementById("graf1")
+	if (typeof(Storage) !== "undefined") {
+		//CANVAS
+		var imgCanvas = document.createElement("canvas");
+			imgCanvas.width = test1.width;
+	    imgCanvas.height = test1.height;
+	// SET
+		localStorage.setItem("test", "graf1");
+	// GET
+	  document.getElementById("box1").innerHTML = localStorage.getItem("test");
+	} else {
+	  document.getElementById("box1").innerHTML = "Sorry, your browser does not support Web Storage...";
 	}
 }
