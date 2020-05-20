@@ -187,6 +187,26 @@ h2{
   align-items: flex-start;
 	justify-content: center;
 }
+
+/* iframe */
+#iframebox{
+	border: none;
+	display: flex;
+	margin: 0 30px;
+	position: absolute;
+	width: 100%;
+	z-index: 100;
+	background: red;
+}
+iframe{
+	background: red;
+	border: none;
+	margin: 0 30px;
+	position: absolute;
+	width: 80px;
+
+	background: green;
+}
 /* The expanding image container (positioning is needed to position the close button and the text) */
 .containerpreview {
   position: relative;
@@ -248,16 +268,25 @@ h2{
 	max-width: 50%;
 	padding-top: 2rem;
 }
+/* FOOTER */
+footer{
+	align-items: center;
+	bottom: 0;
+	display: flex;
+	height: 15%;
+	justify-content: center;
+	margin-top: 30px;
+	position: fixed;
+	width: 100%;
+
+}
 /* NAVIGATION - 'Back', prikker, 'Next'*/
 #navigation{
 	align-items: center;
-	bottom: 5%;
 	display: flex;
-	height: 5%;
-	position: absolute;
-	right: 50%;
-	transform: translateX(50%);
-	width: 80%;
+	height: 25%;
+	justify-content: center;
+	width: 50%;
 }
 .backnext{
 	background: rgba(59, 193, 67, 0.80);
@@ -268,14 +297,14 @@ h2{
 	font-size: 14px;
 	font-weight: bold;
 	height: 100%;
-	width: 25%;
+	width: 15%;
 }
 #navdots{
 	align-items: center;
 	display: flex;
 	height: 75%;
-	justify-content: space-around;
-	margin: 0 10%;
+	justify-content: space-evenly;
+	margin: 0 2.5px;
 	width: 50%;
 }
 #dot1, #dot2, #dot3, #dot4{}
@@ -295,8 +324,6 @@ h2{
 .dotactive{
 	background: #3bc143;;
 }
-
-/* FOOTER */
 
 /* RESPONSIVE */
 /* burgermenu - 767px */
