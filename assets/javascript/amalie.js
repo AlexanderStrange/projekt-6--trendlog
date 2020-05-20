@@ -14,45 +14,36 @@ function burgermenu(){
 		}
 }
 
-// Navigation (‘Back’, navigationsprikker og ‘Next’)
+// NAVIGATION (‘Back’, navigationsprikker og ‘Next’)
 	let step = 'step1';
-	var step1 = document.getElementById('dot1');
-	var step2 = document.getElementById('dot2');
-	var step3 = document.getElementById('dot3');
-	var step4 = document.getElementById('dot4');
+	let step1Page = 'data';
+	let step2Page = 'layout';
+	let step3Page = 'colours';
+	let step4Page = 'final-preview';
+	//next
 function next(){
-	if (step == 'step1'){
-		step = 'step2';
-		step1.classList.remove("dotactive")
-		step1.classList.add("dotafter");
-		step2.classList.add("dotactive");
-	} else if (step == 'step2'){
-		step = 'step3';
-		step2.classList.remove("dotactive")
-		step2.classList.add("dotafter");
-		step3.classList.add("dotactive");
-	} else if (step == 'step3'){
-		step = 'step4';
-		step3.classList.remove("dotactive")
-		step3.classList.add("dotafter");
-		step4.classList.add("dotactive");
+	if (window.location.href.indexOf(step1Page) > 0){
+		step = window.location.href.slice(0, (window.location.href.length - (step1Page.length + 5))) + step2Page + '.html';
+		window.location.href = step;
+	} else if (window.location.href.indexOf(step2Page) > 0){
+		step = window.location.href.slice(0, (window.location.href.length - (step2Page.length + 5))) + step3Page + '.html';
+		window.location.href = step;
+	} else if (window.location.href.indexOf(step3Page) > 0){
+		step = window.location.href.slice(0, (window.location.href.length - (step3Page.length + 5))) + step4Page + '.html';
+		window.location.href = step;
 	}
 }
+//back
 function back(){
-	if (step == 'step4'){
-		step = 'step3';
-		step4.classList.remove("dotactive");
-		step3.classList.remove("dotafter");
-		step3.classList.add("dotactive")
-	} else if (step == 'step3'){
-		step = 'step2';
-		step3.classList.remove("dotactive");
-		step2.classList.remove("dotafter");
-		step2.classList.add("dotactive")
-	} else if (step == 'step2'){
-		step = 'step1';
-		step2.classList.remove("dotactive");
-		step1.classList.remove("dotafter");
-		step1.classList.add("dotactive")
+	if (window.location.href.indexOf(step4Page) > 0){
+		step = window.location.href.slice(0, (window.location.href.length - (step4Page.length + 5))) + step3Page + '.html';
+		console.log(step);
+		window.location.href = step;
+	} else if (window.location.href.indexOf(step3Page) > 0){
+		step = window.location.href.slice(0, (window.location.href.length - (step3Page.length + 5))) + step2Page + '.html';
+		window.location.href = step;
+	} else if (window.location.href.indexOf(step2Page) > 0){
+		step = window.location.href.slice(0, (window.location.href.length - (step2Page.length + 5))) + step1Page + '.html';
+		window.location.href = step;
 	}
 }

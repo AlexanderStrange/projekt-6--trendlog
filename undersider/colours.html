@@ -59,26 +59,26 @@
 			  <form id="colourcontainer">
 					<div class="colourrow">
 						<div class="colourcolumn">
-							<img class="smallcolourpreview" src="../assets/img/colours1.png" alt="green" onclick="myFunction(this);">
+							<img class="smallcolourpreview" src="../assets/img/colours1.png" alt="blue" onclick="myFunction(this);">
 						</div>
 						<div class="colourcolumn">
-							<img class="smallcolourpreview" src="../assets/img/colours2.png" alt="green" onclick="myFunction(this);">
-						</div>
-					</div>
-					<div class="colourrow">
-						<div class="colourcolumn">
-							<img class="smallcolourpreview" src="../assets/img/colours3.png" alt="green" onclick="myFunction(this);">
-						</div>
-						<div class="colourcolumn">
-							<img class="smallcolourpreview" src="../assets/img/colours4.png" alt="green" onclick="myFunction(this);">
+							<img class="smallcolourpreview" src="../assets/img/colours2.png" alt="purple" onclick="myFunction(this);">
 						</div>
 					</div>
 					<div class="colourrow">
 						<div class="colourcolumn">
-							<img class="smallcolourpreview" src="../assets/img/colours5.png" alt="green" onclick="myFunction(this);">
+							<img class="smallcolourpreview" src="../assets/img/colours3.png" alt="dark blue" onclick="myFunction(this);">
 						</div>
 						<div class="colourcolumn">
-							<img class="smallcolourpreview" src="../assets/img/colours6.png" alt="green" onclick="myFunction(this);">
+							<img class="smallcolourpreview" src="../assets/img/colours4.png" alt="bordeux" onclick="myFunction(this);">
+						</div>
+					</div>
+					<div class="colourrow">
+						<div class="colourcolumn">
+							<img class="smallcolourpreview" src="../assets/img/colours5.png" alt="red" onclick="myFunction(this);">
+						</div>
+						<div class="colourcolumn">
+							<img class="smallcolourpreview" src="../assets/img/colours6.png" alt="yellow" onclick="myFunction(this);">
 						</div>
 					</div>
 			   </form>
@@ -99,19 +99,19 @@
 				</div>
 			</div>
 		</div>
+<!-- FOOTER -->
+	<footer>
 <!-- NAVIGATION - 'Back', prikker, 'Next' - -->
-			<div id="navigation">
-				<button type="button" class="backnext" onclick="back()">Back</button>
-				<div id="navdots">
-					<div id ="dot1" class="dot dotactive"></div>
-					<div id ="dot2" class="dot"></div>
-					<div id ="dot3" class="dot"></div>
-					<div id ="dot4" class="dot"></div>
-				</div>
-				<button type="button" class="backnext" onclick="next()">Next</button>
+		<div id="navigation">
+			<button type="button" class="backnext" onclick="back()">Back</button>
+			<div id="navdots">
+				<div id ="dot1" class="dot dotafter" onClick="location.href='data.html'"></div>
+				<div id ="dot2" class="dot dotafter" onClick="location.href='layout.html'"></div>
+				<div id ="dot3" class="dot dotactive" onClick="location.href='colours.html'"></div>
+				<div id ="dot4" class="dot" onClick="location.href='final-preview.html'"></div>
 			</div>
-		</section>
-	</main>
-	<footer></footer>
+			<button type="button" class="backnext" onclick="next()">Next</button>
+		</div>
+	</footer>
 </body>
 </html>

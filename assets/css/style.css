@@ -85,8 +85,6 @@ section{
 #left, #right{
 	align-items: center;
 	display: flex;
-	height: auto;
-	justify-content: center;
 	padding: 5%;
 }
 /* left */
@@ -97,16 +95,18 @@ section{
 	flex-direction: column;
 }
 h2{
+	font-size: 2em;
+	margin-bottom: 5%;
 	color: #fff;
 }
 
 #container {
   overflow-y: scroll;
-  background: white;
+  background: #222;
   display: block;
   width: 100%;
-  height: 30%;
-	flex: auto;
+  height: 79.2%;
+
 }
 #colourcontainer {
   overflow-y: scroll;
@@ -121,16 +121,11 @@ h2{
   align-items: center;
   justify-content: space-between;
   margin-bottom: 2px;
-  height: 12%;
-  background: grey;
-  padding: 1.5%;
-
-}
-#submitbutton{
-  position: absolute;
-  top: 66%;
-  width: 5%;
-  height: 5%;
+  height: 10%;
+  background: white;
+  padding: 2.7%;
+	text-transform: uppercase;
+	font-weight: bold;
 
 }
 
@@ -140,7 +135,7 @@ h2{
   text-decoration: none;
 }
 .box:hover{
-  background-color: #fff;
+  background-color: #5Cb85C;
   transition: 0.3s;
 }
 
@@ -154,6 +149,9 @@ h2{
   float: left;
   width: 25%;
   padding: 10px;
+	background: #fff;
+	margin: 2px;
+	opacity: 80%;
 }
 
 /* Style the images inside the grid */
@@ -161,6 +159,10 @@ h2{
   width: 2rem;
   opacity: 0.8;
   cursor: pointer;
+}
+
+.column:hover{
+opacity: 100%;
 }
 
 .column img:hover {
@@ -187,6 +189,27 @@ h2{
 	width: 60%;
 	display: flex;
   align-items: flex-start;
+	justify-content: center;
+}
+
+/* iframe */
+#iframebox{
+	border: none;
+	display: flex;
+	margin: 0 30px;
+	position: absolute;
+	width: 100%;
+	z-index: 100;
+	background: red;
+}
+iframe{
+	background: red;
+	border: none;
+	margin: 0 30px;
+	position: absolute;
+	width: 80px;
+
+	background: green;
 }
 /* The expanding image container (positioning is needed to position the close button and the text) */
 .containerpreview {
@@ -231,16 +254,43 @@ h2{
 .colourimgratio{
 	width: 100%;
 }
+/*centered*/
+.centered{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+	padding: 5%;
+}
+.previewtext{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.finalpreview{
+	max-width: 50%;
+	padding-top: 2rem;
+}
+/* FOOTER */
+footer{
+	align-items: center;
+	bottom: 0;
+	display: flex;
+	height: 15%;
+	justify-content: center;
+	margin-top: 30px;
+	position: fixed;
+	width: 100%;
+
+}
 /* NAVIGATION - 'Back', prikker, 'Next'*/
 #navigation{
 	align-items: center;
-	bottom: 5%;
 	display: flex;
-	height: 5%;
-	position: absolute;
-	right: 50%;
-	transform: translateX(50%);
-	width: 80%;
+	height: 25%;
+	justify-content: center;
+	width: 50%;
 }
 .backnext{
 	background: rgba(59, 193, 67, 0.80);
@@ -251,14 +301,14 @@ h2{
 	font-size: 14px;
 	font-weight: bold;
 	height: 100%;
-	width: 25%;
+	width: 15%;
 }
 #navdots{
 	align-items: center;
 	display: flex;
 	height: 75%;
-	justify-content: space-around;
-	margin: 0 10%;
+	justify-content: space-evenly;
+	margin: 0 2.5px;
 	width: 50%;
 }
 #dot1, #dot2, #dot3, #dot4{}
@@ -278,8 +328,6 @@ h2{
 .dotactive{
 	background: #3bc143;;
 }
-
-/* FOOTER */
 
 /* RESPONSIVE */
 /* burgermenu - 767px */

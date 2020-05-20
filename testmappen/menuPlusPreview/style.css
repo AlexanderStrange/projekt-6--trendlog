@@ -61,15 +61,6 @@ h2{
   }
 
 
-
-#submitbutton{
-  position: absolute;
-  top: 66%;
-  width: 5%;
-  height: 5%;
-
-}
-
 /*venstre side af skærmen*/
 
 #preview{
@@ -78,7 +69,13 @@ h2{
   height: 20%;
 }
 
-.hidden{
-  display: none;
 
+
+#dropdown{
+  display: none;
+}
+
+
+#dropdown.active{
+display: block;
 }
