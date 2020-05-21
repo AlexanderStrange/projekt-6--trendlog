@@ -59,16 +59,16 @@
 			<div id="left">
 
 				<h2>Choose the data you want to visualise</h2>
-			  <form id="container">
 <!-- Search bar -->
-					<div class="containersearch">
-			      <div class="search-contain">
-			        <img src="../assets/img/search.svg" alt="Search Button" id="search-btn">
-			        <input type="text" id="search" placeholder="">
-			        <p id="tip"> Hit enter to search</p>
+				<div class="containersearch">
+					<div class="search-contain">
+						<img src="../assets/img/search.svg" alt="Search Button" id="search-btn">
+						<input type="text" id="search" placeholder="">
+						<p id="tip"> Hit enter to search</p>
 
-			      </div>
-			    </div>
+					</div>
+				</div>
+				<form id="container">
 
 			      <div class="box" onclick="change_color()">data
 			        <!-- The grid: four columns -->
@@ -86,10 +86,34 @@
 			      </div>
 
 
-			    <div class="box">data</div>
+			    <div class="box">data
+						<div class="row">
+							<div class="column">
+								<img src="../assets/img/graf1.svg" alt="søjle" onclick="myFunction(this);">
+							</div>
+							<div class="column">
+								<img src="../assets/img/graf2.svg" alt="kurve" onclick="myFunction(this);">
+							</div>
+							<div class="column">
+								<img src="../assets/img/graf3.svg" alt="lagkage" onclick="myFunction(this);">
+							</div>
+						</div>
+					</div>
 
 
-			    <div class="box">data</div>
+			    <div class="box">data
+						<div class="row">
+							<div class="column">
+								<img src="../assets/img/graf1.svg" alt="søjle" onclick="myFunction(this);">
+							</div>
+							<div class="column">
+								<img src="../assets/img/graf2.svg" alt="kurve" onclick="myFunction(this);">
+							</div>
+							<div class="column">
+								<img src="../assets/img/graf3.svg" alt="lagkage" onclick="myFunction(this);">
+							</div>
+						</div>
+					</div>
 
 			    <div class="box"></div>
 			    <div class="box"></div>
@@ -100,6 +124,7 @@
 			    <div class="box"></div>
 			    <div class="box"></div>
 			    <div class="box"></div>
+
 			    </form>
 
 			</div>
