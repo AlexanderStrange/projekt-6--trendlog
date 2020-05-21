@@ -38,6 +38,7 @@ header img{
 nav{
 	align-items: center;
 	display: flex;
+	height: 100%;
 }
 ul{
 	align-items: center;
@@ -389,18 +390,16 @@ footer{
 		background: #3bc143;
 	}
 	#TRVFSS, #SFAP{
-		align-items: flex-start;
 		background: #222;
 		display: none;
 		flex-direction: column;
-		position: absolute;
 		right: 0;
-		top: 50px;
 		width: 100%;
 		z-index: 1000;
 	}
+
 	#SFAP{
-		top: 300px;
+		top: 50px;
 	}
 	#TRVFSS li, #SFAP li{
 		margin: 10px;
@@ -412,7 +411,27 @@ footer{
 		width: 100%;
 	}
 }
-
+/* burgermenu - 500px */
+@media screen and (max-width: 700px){
+	#TRVFSS, #SFAP{
+		flex-wrap: wrap;
+		position: absolute;
+	}
+	#TRVFSS{
+		top: 50px;
+	}
+	#SFAP{
+		top: 90px;
+	}
+/* burgermenu - 480px */
+@media screen and (max-width: 470px){
+	#TRVFSS{
+		top: 50px;
+	}
+	#SFAP{
+		top: 120px;
+	}
+}
 /* burgermenu - 767px */
 @media screen and (max-width: 1050px){
 	section{

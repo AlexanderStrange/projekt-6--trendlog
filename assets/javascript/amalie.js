@@ -1,32 +1,32 @@
 // BURGERMENU
 function burgermenu(){
 	var burgerOne = document.getElementById("TRVFSS");
-		if (burgerOne.style.display == "flex") {
+		if (burgerOne.style.display == "block") {
 			burgerOne.style.display = "none";
 		} else{
-			burgerOne.style.display = "flex";
+			burgerOne.style.display = "block";
 		}
+
 	var burgerTwo = document.getElementById("SFAP");
-		if (burgerTwo.style.display == "flex") {
+		if (burgerTwo.style.display == "block") {
 			burgerTwo.style.display = "none";
 		} else{
-			burgerTwo.style.display = "flex";
+			burgerTwo.style.display = "block";
 		}
 }
 
 // SESSIONSTORAGE
-// setItem
+	// setItem
 function setItemSesSto(){
 	const itemSesSto = document.getElementById("expandedImg").src;
 	sessionStorage.setItem("veardi", itemSesSto);
 }
-// getItem
+	// getItem
 function getItemSesSto(){
 	if (sessionStorage.getItem("veardi") != null) {
 		document.getElementById("sessto").src = sessionStorage.getItem("veardi");
 	}
 }
-
 
 // NAVIGATION (‘Back’, navigationsprikker og ‘Next’)
 	let step = 'step1';
@@ -47,7 +47,7 @@ function next(){
 		window.location.href = step;
 	}
 }
-//back
+	//back
 function back(){
 	if (window.location.href.indexOf(step4Page) > 0){
 		step = window.location.href.slice(0, (window.location.href.length - (step4Page.length + 5))) + step3Page + '.html';
