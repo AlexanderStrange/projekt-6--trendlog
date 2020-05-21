@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-DK">
+<head>
+	<!-- META-tags -->
+	<meta name="author" content="Gruppe 5">
+	<meta name="description" content="Track 2:  TrendLog.io og rapport design modulet">
+	<meta name="keywords" content="HTML,CSS,JavaScript, Trendlog.io, design, rapportmodul">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CSS-link -->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+	<!-- JavaScript-link(s) -->
+		<script src="../../assets/javascript/amalie.js" defer></script>
+		<script type="text/javascript" src="../../assets/javascript/alexander.js" defer></script>
+
+	<script src="test.js" defer></script>
+
+	<!-- TITLE-tag -->
+	<title>TEST3</title>
+</head>
+<body>
+<!-- HEADER -->
+	<header>
+	</header>
+	<main>
+<!-- SECTION - left & right-->
+		<section>
+<!-- left -->
+			<div id="left">
+
+				<h2>Choose the data you want to visualise</h2>
+<!-- Search bar -->
+				<div class="containersearch">
+					<div class="search-contain">
+						<img src="../../assets/img/search.svg" alt="Search Button" id="search-btn">
+						<input type="text" id="search" placeholder="">
+						<p id="tip"> Hit enter to search</p>
+
+					</div>
+				</div>
+				<form id="container">
+
+			      <div class="box" onclick="change_color()">data
+			        <!-- The grid: four columns -->
+			        <div class="row">
+			          <div class="column">
+			            <img src="../../assets/img/graf1.svg" alt="søjle" onclick="myFunction(this);">
+			          </div>
+			          <div class="column">
+			            <img src="../../assets/img/graf2.svg" alt="kurve" onclick="myFunction(this);">
+			          </div>
+			          <div class="column">
+			            <img src="../../assets/img/graf3.svg" alt="lagkage" onclick="myFunction(this);">
+			          </div>
+			        </div>
+
+			      </div>
+
+
+			    <div class="box">data
+						<div class="row">
+							<div class="column">
+								<img src="../../assets/img/graf1.svg" alt="søjle" onclick="myFunction(this);">
+							</div>
+							<div class="column">
+								<img src="../../assets/img/graf2.svg" alt="kurve" onclick="myFunction(this);">
+							</div>
+							<div class="column">
+								<img src="../../assets/img/graf3.svg" alt="lagkage" onclick="myFunction(this);">
+							</div>
+						</div>
+					</div>
+
+
+			    <div class="box">data
+						<div class="row">
+							<div class="column">
+								<img src="../../assets/img/graf1.svg" alt="søjle" onclick="myFunction(this);">
+							</div>
+							<div class="column">
+								<img src="../../assets/img/graf2.svg" alt="kurve" onclick="myFunction(this);">
+							</div>
+							<div class="column">
+								<img src="../../assets/img/graf3.svg" alt="lagkage" onclick="myFunction(this);">
+							</div>
+						</div>
+					</div>
+
+			    <div class="box"></div>
+			    <div class="box"></div>
+			    <div class="box"></div>
+			    <div class="box"></div>
+			    <div class="box"></div>
+			    <div class="box"></div>
+			    <div class="box"></div>
+			    <div class="box"></div>
+			    <div class="box"></div>
+
+			    </form>
+
+			</div>
+<!-- right -->
+		<div id="right">
+			<div class="preview">
+				<div class="imgratio">
+					<!-- The expanding image container -->
+					<div class="containerpreview">
+						<!-- Close the image -->
+						<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+						<!-- Expanded image -->
+						<img id="expandedImg" style="width:100%">
+						<!-- Image text -->
+						<div id="imgtext"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</section>
+		<button onclick="window.location.href='test1.html'; locsto()">TEST1</button>
+		<button onclick="window.location.href='test2.html'; locsto()">TEST2</button>
+		<button onclick="window.location.href='test3.html'; locsto()">TEST3</button>
+		<button onclick="window.location.href='test4.html'; setItemSesSto()">TEST4</button>
+	</main>
+<!-- FOOTER -->
+	<footer></footer>
+</body>
+</html>

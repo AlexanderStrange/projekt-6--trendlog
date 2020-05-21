@@ -1,0 +1,22 @@
+section{
+	background: red;
+}
+.box{
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	background: green;
+}
+
+.box img{
+	margin: 30px 100px;
+}
+
+#bilbox{
+	height: 100px;
+	width: 100px;
+}
+
+#sessto{
+	z-index: 1100;
+}

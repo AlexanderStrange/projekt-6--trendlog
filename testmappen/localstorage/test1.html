@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html lang="-en-DK">
+<html lang="en-DK">
 <head>
 	<!-- META-tags --->
-	<meta name="author" content="Gruppe 5">
-	<meta name="description" content="Track 2:  TrendLog.io og rapport design modulet">
-	<meta name="keywords" content="HTML,CSS,JavaScript, Trendlog.io, design, rapportmodul">
-	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- CSS-link --->
-	<link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="test.css">
 	<!-- JavaScript-link(s) -->
+	<script src="test.js"></script>
 	<!-- TITLE-tag --->
-	<title>TEST</title>
+	<title>TEST1</title>
 </head>
 <body>
-<!-- SECTION - left & right-->
-		<section>
-			<img src="../../assets/img/graf1.svg" alt="søjle">
-			<script type="text/javascript">localStorage.setItem("graf1", "../../assets/img/graf1.svg");</script>
-		</section>
-		<a href="test2.html" onclick="saveLocal()">TEST2</a>
+	<h1>TEST1</h1>
+	<section>
+		<div class="box">
+			<img src="graf1.svg" alt="Graf1" id="graf1">
+			<img src="graf2.svg" alt="Graf2" id="graf2">
+			<img src="graf3.svg" alt="Graf3" id="graf3">
+		</div>
+	</section>
+	<button onclick="window.location.href='test1.html'; locsto()">TEST1</button>
+	<button onclick="window.location.href='test2.html'; locsto()">TEST2</button>
+	<button onclick="window.location.href='test3.html'; locsto()">TEST3</button>
+	<button onclick="window.location.href='test4.html'; locsto()">TEST4</button>
 	<footer></footer>
-	<script type="text/javascript" src="test.js" defer></script>
+	<script>sessionStorage.setItem("graf1", "graf1.svg");</script>
 </body>
 </html>

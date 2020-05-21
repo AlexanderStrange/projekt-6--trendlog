@@ -14,6 +14,20 @@ function burgermenu(){
 		}
 }
 
+// SESSIONSTORAGE
+// setItem
+function setItemSesSto(){
+	const itemSesSto = document.getElementById("expandedImg").src;
+	sessionStorage.setItem("veardi", itemSesSto);
+}
+// getItem
+function getItemSesSto(){
+	if (sessionStorage.getItem("veardi") != null) {
+		document.getElementById("sessto").src = sessionStorage.getItem("veardi");
+	}
+}
+
+
 // NAVIGATION (‘Back’, navigationsprikker og ‘Next’)
 	let step = 'step1';
 	let step1Page = 'data';

@@ -238,18 +238,8 @@ opacity: 100%;
   align-items: flex-start;
 	justify-content: center;
 }
-#pregraf{
-	display: flex;
-	height: auto;
-	position: absolute;
-	top: 10%;
-	width: 100%;
-	z-index: 100;
-}
-.grafpic{
-	height: auto;
-	margin-left: 8.5%;
-	width: 10%;
+#sessto{
+	z-index: 1100;
 }
 
 /* The expanding image container (positioning is needed to position the close button and the text) */

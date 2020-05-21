@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-DK">
+<head>
+	<!-- META-tags -->
+	<!-- CSS-link -->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+	<!-- JavaScript-link(s) -->
+		<script src="../../assets/javascript/amalie.js" defer></script>
+		<script type="text/javascript" src="../../assets/javascript/alexander.js" defer></script>
+
+		<script src="test.js" defer></script>
+	<!-- TITLE-tag -->
+	<title>TEST4</title>
+</head>
+<body onload ="getItemSesSto()">
+<!-- HEADER -->
+	<header>
+	</header>
+	<main>
+<!-- SECTION - left & right-->
+		<section>
+<!-- left -->
+			<div id="left">
+				<h2>Choose the layout</h2>
+				<form id="colourcontainer">
+
+					<div class="colourrow">
+						<div class="colourcolumn">
+							<img class="smallcolourpreview" src="../../assets/img/layout.svg" alt="layout1" onclick="myFunction(this);">
+						</div>
+						<div class="colourcolumn">
+							<img class="smallcolourpreview" src="../../assets/img/layout.svg" alt="layout2" onclick="myFunction(this);">
+						</div>
+					</div>
+					<div class="colourrow">
+						<div class="colourcolumn">
+							<img class="smallcolourpreview" src="../../assets/img/layout.svg" alt="layout3" onclick="myFunction(this);">
+						</div>
+						<div class="colourcolumn">
+							<img class="smallcolourpreview" src="../../assets/img/layout.svg" alt="layout4" onclick="myFunction(this);">
+						</div>
+					</div>
+					<div class="colourrow">
+						<div class="colourcolumn">
+							<img class="smallcolourpreview" src="../../assets/img/layout.svg" alt="layout5" onclick="myFunction(this);">
+						</div>
+						<div class="colourcolumn">
+							<img class="smallcolourpreview" src="../../assets/img/layout.svg" alt="layout6" onclick="myFunction(this);">
+						</div>
+					</div>
+				 </form>
+			</div>
+<!-- right -->
+		<div id="right">
+			<div class="preview">
+			<img src="//:0" alt="img" id="sessto">
+				<div class="colourimgratio">
+<!-- The expanding image container -->
+					<div class="containerpreview">
+<!-- Close the image -->
+						<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+<!-- Expanded image -->
+						<img id="expandedImg" style="width:100%">
+<!-- Image text -->
+						<div id="imgtext"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</section>
+		<button onclick="window.location.href='test1.html'; locsto()">TEST1</button>
+		<button onclick="window.location.href='test2.html'; locsto()">TEST2</button>
+		<button onclick="window.location.href='test3.html'; locsto()">TEST3</button>
+		<button onclick="window.location.href='test4.html'; locsto()">TEST4</button>
+	</main>
+<!-- FOOTER -->
+	<footer></footer>
+</body>
+</html>

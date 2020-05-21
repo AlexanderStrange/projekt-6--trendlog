@@ -15,7 +15,7 @@
 	<!-- TITLE-tag -->
 	<title>Choose layout</title>
 </head>
-<body>
+<body onload ="getItemSesSto()">
 <!-- HEADER -->
 	<header>
 		<a href="./index.html"><img src="../assets/img/trendlogio.png" alt="Trendlog logo" class="headerlogo"></a>
@@ -86,15 +86,11 @@
 <!-- right -->
 		<div id="right">
 			<div class="preview">
+<!-- sessionStorage -->
+				<img src="//:0" alt="img" id="sessto">
 				<div class="colourimgratio">
 <!-- The expanding image container -->
 					<div class="containerpreview">
-<!-- Preview grafer -->
-						<div id="pregraf">
-							<img src="../assets/img/graf1.svg" alt="søjle" class="grafpic">
-							<img src="../assets/img/graf2.svg" alt="kurve" class="grafpic">
-							<img src="../assets/img/graf3.svg" alt="lagkage" class="grafpic">
-						</div>
 <!-- Close the image -->
 						<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 <!-- Expanded image -->
@@ -118,7 +114,7 @@
 				<div id ="dot3" class="dot" onClick="location.href='colours.html'"></div>
 				<div id ="dot4" class="dot" onClick="location.href='final-preview.html'"></div>
 			</div>
-			<button type="button" class="backnext" onclick="next()">Next</button>
+			<button type="button" class="backnext" onclick="next(); setItemSesSto()">Next</button>
 		</div>
 	</footer>
 </body>
