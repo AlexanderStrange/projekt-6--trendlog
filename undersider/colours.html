@@ -50,12 +50,11 @@
 		</button>
 	</header>
 	<main>
+		<h2>Choose the colours</h2>
 <!-- SECTION - left & right-->
 		<section>
 <!-- left -->
 			<div id="left">
-
-				<h2>Choose the colours</h2>
 			  <form id="colourcontainer">
 					<div class="colourrow">
 						<div class="colourcolumn">
@@ -87,17 +86,9 @@
 		<div id="right">
 <!-- sessionStorage -->
 			<img src="//:0" alt="img" id="sessto">
-			<div class="colourpreview">
-				<div class="colourimgratio">
-					<!-- The expanding image container -->
-					<div class="containerpreview">
-						<!-- Close the image -->
-						<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-						<!-- Expanded image -->
-						<img id="expandedImg" style="width:100%">
-						<!-- Image text -->
-						<div id="imgtext"></div>
-					</div>
+			<div class="preview"> <!-- white background -->
+				<div class="imgholder"> <!-- expanding img container -->
+					<img id="expandedImg" style="width: 100%"> <!-- expanded image -->
 				</div>
 			</div>
 		</div>

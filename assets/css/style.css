@@ -86,7 +86,7 @@ section{
 #left, #right{
 	align-items: center;
 	display: flex;
-	padding: 5%;
+	padding: 0% 5% 5% 5%;
 }
 /* left */
 #left{
@@ -98,6 +98,7 @@ section{
 h2{
 	font-size: 2em;
 	margin-bottom: 5%;
+	padding-left: 5%;
 	color: #fff;
 }
 
@@ -152,6 +153,7 @@ h2{
 
 .containersearch {
 	background-color: #2c3e50;
+	padding-left: 5%;
 
 }
 
@@ -248,40 +250,27 @@ opacity: 100%;
 
 }
 
-/* The expanding image container (positioning is needed to position the close button and the text) */
-.containerpreview {
-  position: relative;
-
-}
-
-/* Expanding image text */
-#imgtext {
+/*preview*/
+.imgholder{
+  /*display: none;*/
   position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
-  font-size: 20px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
-/* Closable button inside the image */
-.closebtn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
-}
 .preview{
-	display: flex;
-	justify-content: center;
-	background: #fff;
-	width: 100%;
-	height: 72%;
-	flex: auto;
-	border: solid black 5px;
-	align-items: center;
+  background-color: #fff;
+  width: 100%;
+  position: relative;
+  padding-top: 56.25%; /*ratio*/
+  /*position: relative; /*if text inside*/
+}
 
+#expandedImg{
+  width: 100%;
+  height: 100%;
 }
 
 .colourpreview{
@@ -290,9 +279,6 @@ opacity: 100%;
 	width: 100%;
 }
 
-.imgratio{
-	width: 56.25%;
-}
 .colourimgratio{
 	width: 100%;
 }

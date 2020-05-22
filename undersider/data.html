@@ -54,22 +54,18 @@
 	</header>
 	<main>
 <!-- SECTION - left & right-->
+		<h2>Choose the data you want to visualise</h2>
+<!-- Search bar -->
+		<div class="containersearch">
+			<img src="../assets/img/search.svg" alt="Search Button" id="search-btn">
+			<input type="text" id="search" placeholder="">
+			<p id="tip"> Hit enter to search</p>
+	</div>
 		<section>
 <!-- left -->
 			<div id="left">
-
-				<h2>Choose the data you want to visualise</h2>
-<!-- Search bar -->
-				<div class="containersearch">
-					<div class="search-contain">
-						<img src="../assets/img/search.svg" alt="Search Button" id="search-btn">
-						<input type="text" id="search" placeholder="">
-						<p id="tip"> Hit enter to search</p>
-
-					</div>
-				</div>
+<!-- menu -->
 				<form id="container">
-
 			      <div class="box" onclick="change_color()">data
 			        <!-- The grid: four columns -->
 			        <div class="row">
@@ -131,17 +127,9 @@
 			</div>
 <!-- right -->
 		<div id="right">
-			<div class="preview">
-				<div class="imgratio">
-					<!-- The expanding image container -->
-					<div class="containerpreview">
-						<!-- Close the image -->
-						<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-						<!-- Expanded image -->
-						<img id="expandedImg" style="width:100%">
-						<!-- Image text -->
-						<div id="imgtext"></div>
-					</div>
+			<div class="preview"> <!-- white background -->
+				<div class="imgholder"> <!-- expanding img container -->
+					<img id="expandedImg" style="width: 100%"> <!-- expanded image -->
 				</div>
 			</div>
 		</div>
