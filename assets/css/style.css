@@ -240,7 +240,12 @@ opacity: 100%;
 	justify-content: center;
 }
 #sessto{
-	z-index: 1100;
+	height: 400px;
+	position: absolute;
+	top: 15%;
+	left: 46.5%;
+	width: auto;
+
 }
 
 /* The expanding image container (positioning is needed to position the close button and the text) */
