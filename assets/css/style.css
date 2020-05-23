@@ -241,12 +241,14 @@ opacity: 100%;
   align-items: flex-start;
 	justify-content: center;
 }
+/* sessionStorage IMG */
 #sessto{
-	height: 400px;
+	height: 75px;
 	position: absolute;
-	top: 15%;
-	left: 46.5%;
+	top: 26%;
+	left: 51%;
 	width: auto;
+	z-index: 100;
 
 }
 
