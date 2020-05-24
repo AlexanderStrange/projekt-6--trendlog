@@ -243,10 +243,10 @@ opacity: 100%;
 }
 /* sessionStorage IMG */
 #sessto{
-	height: 75px;
+	height: 20%;
 	position: absolute;
-	top: 26%;
-	left: 51%;
+	top: 12%;
+	left: 9%;
 	width: auto;
 	z-index: 100;
 
