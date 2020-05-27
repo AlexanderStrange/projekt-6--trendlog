@@ -40,7 +40,7 @@ nav{
 	display: flex;
 	height: 100%;
 }
-ul{
+#TRVFSS, #SFAP{
 	align-items: center;
 	display: flex;
 	list-style: none;
@@ -376,12 +376,13 @@ footer{
 	#TRVFSS, #SFAP{
 		background: #222;
 		display: none;
-		flex-direction: column;
 		right: 0;
 		width: 100%;
 		z-index: 1000;
 	}
-
+	#TRVFSS.isVisible, #SFAP.isVisible {
+		display: flex;
+	}
 	#SFAP{
 		top: 50px;
 	}

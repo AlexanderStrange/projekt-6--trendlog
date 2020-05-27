@@ -1,18 +1,17 @@
 // BURGERMENU
+var burgerOne = document.getElementById("TRVFSS");
+var burgerTwo = document.getElementById("SFAP");
 function burgermenu(){
-	var burgerOne = document.getElementById("TRVFSS");
-		if (burgerOne.style.display == "block") {
-			burgerOne.style.display = "none";
-		} else{
-			burgerOne.style.display = "block";
-		}
-
-	var burgerTwo = document.getElementById("SFAP");
-		if (burgerTwo.style.display == "block") {
-			burgerTwo.style.display = "none";
-		} else{
-			burgerTwo.style.display = "block";
-		}
+	if (!burgerOne.classList.contains('isVisible')) {
+		burgerOne.classList.add('isVisible');
+	} else{
+		burgerOne.classList.remove('isVisible');
+	}
+	if (!burgerTwo.classList.contains('isVisible')) {
+		burgerTwo.classList.add('isVisible');
+	} else{
+		burgerTwo.classList.remove('isVisible');
+	}
 }
 
 // SESSIONSTORAGE
