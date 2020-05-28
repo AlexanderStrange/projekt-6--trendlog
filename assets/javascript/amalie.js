@@ -36,27 +36,27 @@ function getItemSesSto(){
 	//next
 function next(){
 	if (window.location.href.indexOf(step1Page) > 0){
-		step = window.location.href.slice(0, (window.location.href.length - (step1Page.length + 5))) + step2Page + '.html';
+		step = window.location.href.slice(0, (window.location.href.length - (step1Page.length))) + step2Page + '.html';
 		window.location.href = step;
 	} else if (window.location.href.indexOf(step2Page) > 0){
-		step = window.location.href.slice(0, (window.location.href.length - (step2Page.length + 5))) + step3Page + '.html';
+		step = window.location.href.slice(0, (window.location.href.length - (step2Page.length))) + step3Page + '.html';
 		window.location.href = step;
 	} else if (window.location.href.indexOf(step3Page) > 0){
-		step = window.location.href.slice(0, (window.location.href.length - (step3Page.length + 5))) + step4Page + '.html';
+		step = window.location.href.slice(0, (window.location.href.length - (step3Page.length))) + step4Page + '.html';
 		window.location.href = step;
 	}
 }
 	//back
 function back(){
 	if (window.location.href.indexOf(step4Page) > 0){
-		step = window.location.href.slice(0, (window.location.href.length - (step4Page.length + 5))) + step3Page + '.html';
+		step = window.location.href.slice(0, (window.location.href.length - (step4Page.length))) + step3Page + '.html';
 		console.log(step);
 		window.location.href = step;
 	} else if (window.location.href.indexOf(step3Page) > 0){
-		step = window.location.href.slice(0, (window.location.href.length - (step3Page.length + 5))) + step2Page + '.html';
+		step = window.location.href.slice(0, (window.location.href.length - (step3Page.length))) + step2Page + '.html';
 		window.location.href = step;
 	} else if (window.location.href.indexOf(step2Page) > 0){
-		step = window.location.href.slice(0, (window.location.href.length - (step2Page.length + 5))) + step1Page + '.html';
+		step = window.location.href.slice(0, (window.location.href.length - (step2Page.length))) + step1Page + '.html';
 		window.location.href = step;
 	}
 }

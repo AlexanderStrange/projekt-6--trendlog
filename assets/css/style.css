@@ -437,11 +437,11 @@ footer{
 	  cursor: pointer;
 	}
 
-		.box {
-			font-size: 0.5em;
-			}
+	.box {
+		font-size: 0.5em;
+	}
 
-#container {
-	width: 100%;
-}
+	#container {
+		width: 100%;
+	}
 }
